@@ -40,18 +40,18 @@ public class Main {
                 }
                 case VIEW -> {
                     Read reader = new Read();
-                    reader.sort(reader.getChoice());  // fucking fix this
+                    reader.sort(reader.getChoice());
 
                     System.out.println();
 
                     Counter counter = new Counter(reader.getLines());
-
                     counter.displayCount();
                 }
                 case ADD -> {
                     //Creates new workout log entry
                     WorkoutLog workoutLog = new WorkoutLog();
                     System.out.println();
+
                     //Writes new workout log into the file
                     Write.writeFile(workoutLog.toWriteFile());
                     System.out.println();
