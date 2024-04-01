@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Make add workout gui">
+    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalViewMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalViewMenu.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalLogs.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalLogs.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalMenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +112,9 @@
       <workItem from="1711940915076" duration="660000" />
       <workItem from="1711942604788" duration="9634000" />
       <workItem from="1711999470866" duration="3774000" />
-      <workItem from="1712003261763" duration="3449000" />
+      <workItem from="1712003261763" duration="4789000" />
+      <workItem from="1712008685673" duration="910000" />
+      <workItem from="1712009607728" duration="429000" />
     </task>
     <task id="LOCAL-00001" summary="Start Demo 3">
       <option name="closed" value="true" />
@@ -157,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712004665591</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Link Menu and Logs together">
+      <option name="closed" value="true" />
+      <created>1712007478973</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712007478973</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +196,7 @@
     <MESSAGE value="Make switch statement in main() more readable" />
     <MESSAGE value="Make main menu gui" />
     <MESSAGE value="Make add workout gui" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make add workout gui" />
+    <MESSAGE value="Link Menu and Logs together" />
+    <option name="LAST_COMMIT_MESSAGE" value="Link Menu and Logs together" />
   </component>
 </project>

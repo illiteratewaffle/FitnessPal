@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="240.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.ucalgary.cpsc.cpsc219project.FitnessPalViewController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="240.0" prefWidth="480.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Choose how you want your workouts to be sorted">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button maxHeight="25.0" maxWidth="100.0" mnemonicParsing="false" onMouseClicked="#onSortByRecentClick" prefHeight="25.0" prefWidth="100.0" text="Recently Added">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin></Button>
+                  <Button maxHeight="25.0" maxWidth="100.0" mnemonicParsing="false" onMouseClicked="#onSortByExerciseClick" prefHeight="25.0" prefWidth="100.0" text="Exercise">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin></Button>
+                  <Button maxHeight="25.0" maxWidth="100.0" mnemonicParsing="false" onMouseClicked="#onSortByDateClick" prefHeight="25.0" prefWidth="100.0" text="Date">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin></Button>
+               </children></HBox>
+         </children></VBox>
+   </children>
+</AnchorPane>

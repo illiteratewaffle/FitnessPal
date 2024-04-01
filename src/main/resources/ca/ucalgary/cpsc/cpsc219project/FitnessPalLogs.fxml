@@ -45,7 +45,7 @@
                         <Insets top="10.0" />
                      </VBox.margin>
                   </Label>
-                  <TextField alignment="CENTER" maxHeight="25.0" maxWidth="149.0" prefHeight="25.0" prefWidth="149.0" promptText="e.g. 5, 8, 12, etc." />
+                  <TextField maxHeight="25.0" maxWidth="149.0" prefHeight="25.0" prefWidth="149.0" promptText="e.g. 5, 8, 12, etc." />
                </children>
             </VBox>
          </children></HBox>

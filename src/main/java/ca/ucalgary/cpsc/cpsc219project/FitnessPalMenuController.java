@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class FitnessPalMenuController extends Application {
+public class FitnessPalMenuController {
 
     @FXML
     protected void onAddWorkoutClick() {
@@ -30,7 +30,18 @@ public class FitnessPalMenuController extends Application {
 
     @FXML
     protected void onViewWorkoutsClick() {
-        System.out.println("open view workouts menu");
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(FitnessPalApplication.class.getResource("FitnessPalView.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 480, 240);
+            Stage stage = new Stage();
+
+            stage.setTitle("View Workouts");
+            stage.setScene(scene);
+
+            stage.show();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }
