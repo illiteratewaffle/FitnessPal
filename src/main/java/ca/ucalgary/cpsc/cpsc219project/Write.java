@@ -2,9 +2,11 @@ package ca.ucalgary.cpsc.cpsc219project;
 
 import java.io.*;
 
-public class Write extends Files {
+// Abstract class: to not allow object type Write to be created
+public abstract class Write extends Files {
 
-    /**Writes workout in file
+    /**Writes workout in file.
+     * This is an action corresponding to workout.txt, does not need a Write object because there's only 1 file.
      * Includes error/exception handling.
      * This starts writing content at the end instead of the start. Appends instead of overrides.
      *

@@ -39,15 +39,18 @@ public class Main {
                     System.out.println();
                 }
                 case VIEW -> {
-                    Read.readFile();
+                    Read reader = new Read();
+                    reader.sort(reader.getChoice());  // fucking fix this
 
                     System.out.println();
 
-                    Counter.displayCount();
+                    Counter counter = new Counter(reader.getLines());
+
+                    counter.displayCount();
                 }
                 case ADD -> {
                     //Creates new workout log entry
-                    WorkoutLog workoutLog = WorkoutLog.createLog();
+                    WorkoutLog workoutLog = new WorkoutLog();
                     System.out.println();
                     //Writes new workout log into the file
                     Write.writeFile(workoutLog.toWriteFile());

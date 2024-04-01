@@ -6,7 +6,21 @@ public class WorkoutLog {
     private final int SETS;
     private final int REPS;
 
-    /**Self-explanatory. Parameters are from Main.createLog()
+    /**Asks for user input and creates a workout log.
+     * Displays what the user as entered.
+     */
+    public WorkoutLog(){
+        LogInput logInput = new LogInput();
+        this.DATE = logInput.inputDate();
+        this.EXERCISE = logInput.inputExercise();
+        this.SETS = logInput.inputSets();
+        this.REPS = logInput.inputReps();
+
+        System.out.println("This is what you've entered: ");
+        display();
+    };
+
+    /**For use in Counter.java (overloading)
      *
      * @param date
      * @param exercise
@@ -18,26 +32,6 @@ public class WorkoutLog {
         this.EXERCISE = exercise;
         this.SETS = sets;
         this.REPS = reps;
-
-    }
-
-    /**Asks for user input and creates a workout log.
-     * Displays what the user as entered.
-     *
-     * @return an object that contains what the user entered.
-     */
-    public static WorkoutLog createLog(){
-        Input input = new Input();
-        String date = input.inputDate();
-        String exercise = input.inputExercise();
-        int sets = input.inputSets();
-        int reps = input.inputReps();
-        WorkoutLog workoutLog = new WorkoutLog(date, exercise, sets, reps);
-
-        System.out.println("This is what you've entered: ");
-        workoutLog.display();
-
-        return workoutLog;
     }
 
     /**Creates a message to put into the file

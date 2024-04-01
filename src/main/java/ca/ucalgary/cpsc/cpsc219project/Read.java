@@ -6,14 +6,18 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**Lets user see their workouts. Outputs in Main class
+ *
+ */
 public class Read extends Files {
 
+    // class variables
+    private String choice;
+
+    private int lines;
+
+    // for testing purposes
     private static String testFileDirectory;
-
-    /**Lets user see their workouts. Outputs in Main class
-     *
-     */
-
     /**
      * Constructor ONLY for passing in test cases
      * @param testFileDirectory
@@ -23,23 +27,23 @@ public class Read extends Files {
 
     }
 
+
     /**
      *
-     * Default constructor
+     * Read constructor
      */
-    public Read() {}
-
-    public static void readFile(){
-        String choice = Read.chooseSort();
-        Read.sort(choice);
+    public Read() {
+        this.choice = chooseSort();
+        this.lines = countLines();
     }
 
     /**
      * Counts how many lines are in the file
+     * Static method because the file is independent
      *
      * @return number of lines in the file
      */
-    public static int countLines(){
+    public int countLines(){
         int lines = 0;
         try {
             File file = openFile();
@@ -74,7 +78,7 @@ public class Read extends Files {
      *
      * @return user's choice
      */
-    public static String chooseSort() {
+    private String chooseSort() {
         Scanner scanner = new Scanner(System.in);
         String choice;
         //String choiceUppercase;
@@ -110,7 +114,7 @@ public class Read extends Files {
      * - By Date , or
      * - By Exercise (alphabetical order)
      */
-    public static void sort(String choice) {
+    public void sort(String choice) {
         try {
             File file = openFile();
             FileReader file_reader = new FileReader(file);
@@ -143,7 +147,7 @@ public class Read extends Files {
      * This reads the file and outputs exactly what the file says.
      * Outputs into the terminal, does not modify file.
      */
-    public static void sortByRecent(BufferedReader buffered_reader) throws IOException {
+    private void sortByRecent(BufferedReader buffered_reader) throws IOException {
         String fileLine = buffered_reader.readLine();
 
         while (fileLine != null) {
@@ -160,7 +164,7 @@ public class Read extends Files {
      * Sorts the ArrayList using java.util.Collections
      * Prints the file in chronological order.
      */
-    public static void sortByDate(BufferedReader buffered_reader) throws IOException {
+    private void sortByDate(BufferedReader buffered_reader) throws IOException {
         ArrayList<String> sortedByDate = new ArrayList<>();
 
         String aLine;
@@ -187,7 +191,7 @@ public class Read extends Files {
      * Looked up string methods, how to split a string at the first space:
      * https://www.geeksforgeeks.org/split-string-java-examples/
      */
-    public static void sortByExercise(BufferedReader buffered_reader) throws IOException {
+    private void sortByExercise(BufferedReader buffered_reader) throws IOException {
         ArrayList<String> sortedByExercise = new ArrayList<>();
 
         String aLine;
@@ -212,5 +216,13 @@ public class Read extends Files {
         for(int i = 0; i < sortedDateAndExercise.size(); i++){
             System.out.println(sortedDateAndExercise.get(i));
         }
+    }
+
+    public String getChoice() {
+        return choice;
+    }
+
+    protected int getLines() {
+        return lines;
     }
 }

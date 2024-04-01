@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class MenuOptions {
     private String menuOption;
-    private static final String VIEW = "1";
-    private static final String ADD = "2";
-    private static final String EXIT = "3";
-    private static final String HELP = "4";
-    private static final Scanner scanner = new Scanner(System.in);
+    private final String VIEW = "1";
+    private final String ADD = "2";
+    private final String EXIT = "3";
+    private final String HELP = "4";
+    private final Scanner scanner = new Scanner(System.in);
 
     public MenuOptions() {
         this.menuOption = null;

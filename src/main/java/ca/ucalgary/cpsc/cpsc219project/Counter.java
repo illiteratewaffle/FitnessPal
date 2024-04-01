@@ -9,14 +9,25 @@ import java.util.HashSet;
  * total exercises, sets, and reps performed.
  */
 
-public class Counter extends Read {
-    private static final int LINES = Read.countLines();
-    private static int countDates; //unique dates only
-    private static int countExercises;
-    private static int countSets;
-    private static int countReps;
+public class Counter extends Files {
+    private final int LINES;
+    private int countDates; //unique dates only
+    private int countExercises;
+    private int countSets;
+    private int countReps;
      
+    public Counter(int lines){
 
+        this.LINES = lines;
+
+        ArrayList<WorkoutLog> workouts = getInformation();
+
+        this.countDates = countDates(workouts);
+        this.countExercises = countExercises(workouts);
+        this.countSets = countSets(workouts);
+        this.countReps = countReps(workouts);
+
+    }
 
     /**
      * Self explanatory
@@ -25,13 +36,7 @@ public class Counter extends Read {
      * Counts how many sets you've done in total
      * Counts how many reps you've done in total
      */
-    public static void displayCount() {
-        ArrayList<WorkoutLog> workouts = getInformation();
-        countDates = countDates(workouts);
-        countExercises = countExercises(workouts);
-        countSets = countSets(workouts);
-        countReps = countReps(workouts);
-
+    public void displayCount() {
 
          // Preparing messages to display the counted statistics
         String daysMessage = "Total Days of Exercising: " + countDates;
@@ -45,7 +50,7 @@ public class Counter extends Read {
         System.out.println(setsMessage);
         System.out.println(repsMessage);
 
-        System.out.println("Great jobb!");
+        System.out.println("Great job!");
 
     }
 
@@ -54,7 +59,8 @@ public class Counter extends Read {
      * Includes error/exception handling.
      * @return ArrayList of WorkoutLog objects to be sorted/counted
      */
-    public static ArrayList<WorkoutLog> getInformation() {
+    public ArrayList<WorkoutLog> getInformation() {
+
         ArrayList<WorkoutLog> workouts = new ArrayList<WorkoutLog>();
 
         try {
@@ -97,7 +103,7 @@ public class Counter extends Read {
      * @param workouts ArrayList of WorkoutLog objects to be sorted/counted
      * @return Counts how many days you've exercised in total (does not count duplicate dates)
      */
-    public static int countDates(ArrayList<WorkoutLog> workouts) {
+    public int countDates(ArrayList<WorkoutLog> workouts) {
         HashSet<String> dates = new HashSet<String>();
         for (int i = 0; i < LINES; i++) {
             dates.add(workouts.get(i).getDATE());
@@ -113,7 +119,7 @@ public class Counter extends Read {
      * @param workouts ArrayList of WorkoutLog objects to be sorted/counted
      * @return Counts how many exercises you've done in total (counts duplicate)
      */
-    public static int countExercises(ArrayList<WorkoutLog> workouts) {
+    public int countExercises(ArrayList<WorkoutLog> workouts) {
         String[] exercises = new String[LINES];
         for (int i = 0; i < LINES; i++) {
             exercises[i] = (workouts.get(i).getEXERCISE());
@@ -129,7 +135,7 @@ public class Counter extends Read {
      * @param workouts ArrayList of WorkoutLog objects to be sorted/counted
      * @return Counts how many sets you've done in total (addition)
      */
-    public static int countSets(ArrayList<WorkoutLog> workouts){
+    public int countSets(ArrayList<WorkoutLog> workouts){
         int numberSets = 0;
         for (int i = 0; i < LINES; i++) {
             numberSets += (workouts.get(i).getSETS());
@@ -143,7 +149,7 @@ public class Counter extends Read {
      * @param workouts ArrayList of WorkoutLog objects to be sorted/counted
      * @return Counts how many reps you've done in total (addition)
      */
-    public static int countReps(ArrayList<WorkoutLog> workouts){
+    public int countReps(ArrayList<WorkoutLog> workouts){
         int numberReps = 0;
         for (int i = 0; i < LINES; i++) {
             numberReps += (workouts.get(i).getREPS());
@@ -152,19 +158,19 @@ public class Counter extends Read {
         return numberReps;
     }
 
-    public static int getCountDates() {
+    public int getCountDates() {
         return countDates;
     }
 
-    public static int getCountExercises() {
+    public int getCountExercises() {
         return countExercises;
     }
 
-    public static int getCountSets() {
+    public int getCountSets() {
         return countSets;
     }
 
-    public static int getCountReps() {
+    public int getCountReps() {
         return countReps;
     }
 }

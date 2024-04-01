@@ -2,7 +2,8 @@ package ca.ucalgary.cpsc.cpsc219project;
 
 import java.util.Scanner;
 
-public class Input {
+// Renamed from "Input" to "LogInput" to make inputs for Menu Options and Workout Logs distinct.
+public class LogInput {
     //Works to store workout info and year etc
     private String date;
     private String exercise;
@@ -16,7 +17,7 @@ public class Input {
     /**Constructor for Input
      *Initializes varibale with default values
      */
-    public Input() {
+    public LogInput() {
         this.date = null;
         this.exercise = null;
         this.sets = 0;

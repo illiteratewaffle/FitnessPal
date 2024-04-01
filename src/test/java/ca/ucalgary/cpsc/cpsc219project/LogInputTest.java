@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class InputTest {
+class LogInputTest {
 
     /*
     For these tests, I cant seem to find any articles online on
@@ -22,12 +22,12 @@ class InputTest {
 
     @Test
     void testInputDate_correct() {
-        Input testInput = new Input();
+        LogInput testLogInput = new LogInput();
         String expected = "12/12/12";
 
         System.out.println("type \"12/12/12\"");
         //System.in.("12/12/12");
-        String toCheck = testInput.inputDate();
+        String toCheck = testLogInput.inputDate();
 
         boolean result = (expected.equals(toCheck));
         assertTrue(result, "should be true (if you enter 12/12/12)");
@@ -35,12 +35,12 @@ class InputTest {
 
     @Test
     void testInputDate_incorrect() {
-        Input testInput = new Input();
+        LogInput testLogInput = new LogInput();
         String expected = "12/12/12";
 
         System.out.println("type \"121212\" and you will be reprompted.");
         System.out.println("type \"12/12/12\" and itll be correct.");
-        String toCheck = testInput.inputDate();
+        String toCheck = testLogInput.inputDate();
 
         boolean result = (expected.equals(toCheck));
         assertTrue(result, "should be true (if you enter 121212)");
@@ -48,12 +48,12 @@ class InputTest {
 
     @Test
     void testInputDate_nothing() {
-        Input testInput = new Input();
+        LogInput testLogInput = new LogInput();
         String expected = "12/12/12";
 
         System.out.println("press enter and you will be reprompted.");
         System.out.println("type \"12/12/12\" and itll be correct.");
-        String toCheck = testInput.inputDate();
+        String toCheck = testLogInput.inputDate();
 
         boolean result = (expected.equals(toCheck));
         assertTrue(result, "should be true (if you enter 121212)");
@@ -61,11 +61,11 @@ class InputTest {
 
     @Test
     void testInputSets_correct() {
-        Input testInput = new Input();
+        LogInput testLogInput = new LogInput();
         int expected = 3;
 
         System.out.println("type \"3\"");
-        int toCheck = testInput.inputSets();
+        int toCheck = testLogInput.inputSets();
 
         boolean result = (expected == toCheck);
         assertTrue(result, "should be true (if you enter 3)");
@@ -74,11 +74,11 @@ class InputTest {
 
     @Test
     void testInputReps_correct() {
-        Input testInput = new Input();
+        LogInput testLogInput = new LogInput();
         int expected = 12;
 
         System.out.println("type \"12\"");
-        int toCheck = testInput.inputReps();
+        int toCheck = testLogInput.inputReps();
 
         boolean result = (expected == toCheck);
         assertTrue(result, "should be true (if you enter 12)");
