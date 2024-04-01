@@ -13,6 +13,7 @@ public class Main {
     private static final String ADD = "2";
     private static final String EXIT = "3";
     private static final String HELP = "4";
+
     //Controls main loop of the game
     static GameStatus gameOn = GameStatus.ON;
 
