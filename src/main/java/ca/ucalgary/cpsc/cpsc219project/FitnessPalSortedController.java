@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class FitnessPalLogsController {
+public class FitnessPalSortedController {
 
     private Stage stage;
 
@@ -31,7 +31,5 @@ public class FitnessPalLogsController {
             throw new RuntimeException(e);
         }
     }
-
-
 
 }
