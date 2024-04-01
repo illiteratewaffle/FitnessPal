@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Date: ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField maxHeight="25.0" maxWidth="149.0" prefHeight="25.0" prefWidth="149.0" promptText="yy/mm/dd" />
+                  <Label text="Exercise: ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField maxHeight="25.0" maxWidth="149.0" prefHeight="25.0" prefWidth="149.0" promptText="e.g. &quot;bench press&quot;" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Number of Sets:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField maxHeight="25.0" maxWidth="149.0" prefHeight="30.0" prefWidth="200.0" promptText="e.g. 3, 4, 5, etc." VBox.vgrow="ALWAYS" />
+                  <Label text="Number of Reps:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField alignment="CENTER" maxHeight="25.0" maxWidth="149.0" prefHeight="25.0" prefWidth="149.0" promptText="e.g. 5, 8, 12, etc." />
+               </children>
+            </VBox>
+         </children></HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button maxHeight="25.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Add Workout">
+               <HBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </HBox.margin></Button>
+            <Button maxHeight="25.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Return to Menu">
+               <HBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </HBox.margin></Button>
+         </children></HBox>
+   </children>
+</VBox>
