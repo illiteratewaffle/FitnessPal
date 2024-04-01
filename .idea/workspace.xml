@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Start Demo 3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Counter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Files.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/LogInput.java" afterDir="false" />
+    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Remove a todo comment">
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/MenuOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/MenuOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Read.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/WorkoutLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/WorkoutLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Write.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Write.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/ucalgary/cpsc/cpsc219project/InputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/ucalgary/cpsc/cpsc219project/LogInputTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/workouts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/workouts.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1711940913871</updated>
       <workItem from="1711940915076" duration="660000" />
-      <workItem from="1711942604788" duration="6139000" />
+      <workItem from="1711942604788" duration="6477000" />
     </task>
     <task id="LOCAL-00001" summary="Start Demo 3">
       <option name="closed" value="true" />
@@ -113,7 +103,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711941479562</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Revamp code for readability. All Classes from demo 2.">
+      <option name="closed" value="true" />
+      <created>1711949572283</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711949572283</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Remove a todo comment">
+      <option name="closed" value="true" />
+      <created>1711949690660</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711949690660</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +127,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start Demo 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start Demo 3" />
+    <MESSAGE value="Revamp code for readability. All Classes from demo 2." />
+    <MESSAGE value="Remove a todo comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove a todo comment" />
   </component>
 </project>

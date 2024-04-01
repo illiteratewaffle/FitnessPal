@@ -32,13 +32,12 @@ public class Main {
             menuOptions.optionsMessages(menuOption);
 
             switch (menuOption) {
-                case EXIT -> {
+                case EXIT:
                     gameOn = GameStatus.OFF;
-                }
-                case HELP -> {
-                    System.out.println();
-                }
-                case VIEW -> {
+
+                    break;
+
+                case VIEW:
                     Read reader = new Read();
                     reader.sort(reader.getChoice());
 
@@ -46,8 +45,10 @@ public class Main {
 
                     Counter counter = new Counter(reader.getLines());
                     counter.displayCount();
-                }
-                case ADD -> {
+
+                    break;
+
+                case ADD:
                     //Creates new workout log entry
                     WorkoutLog workoutLog = new WorkoutLog();
                     System.out.println();
@@ -55,11 +56,12 @@ public class Main {
                     //Writes new workout log into the file
                     Write.writeFile(workoutLog.toWriteFile());
                     System.out.println();
-                }
-                default -> {
-                    //Error message for invalid input
-                    System.err.println();
-                }
+
+                    break;
+
+                default:
+                    System.err.println("Make sure your menu option is one of the following: 1, 2, 3, 4");
+
             }
         }
     }
