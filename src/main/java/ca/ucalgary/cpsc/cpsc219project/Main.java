@@ -50,13 +50,15 @@ public class Main {
                     break;
 
                 case ADD:
+                    // Moved to GUI controllers
+
                     //Creates new workout log entry
-                    WorkoutLog workoutLog = new WorkoutLog();
-                    System.out.println();
+                    //WorkoutLog workoutLog = new WorkoutLog();
+                    //System.out.println();
 
                     //Writes new workout log into the file
-                    Write.writeFile(workoutLog.toWriteFile());
-                    System.out.println();
+                    //Write.writeFile(workoutLog.toWriteFile());
+                    //System.out.println();
 
                     break;
 

@@ -17,7 +17,11 @@ public class FitnessPalMenuController {
 
     private Stage stage;
 
-
+    /**
+     * When you press "Add Workout"
+     *
+     * @param event
+     */
     @FXML
     protected void onAddWorkoutClick(ActionEvent event) {
         try {
@@ -36,7 +40,11 @@ public class FitnessPalMenuController {
         }
     }
 
-
+    /**
+     * When you press "View Workouts"
+     *
+     * @param event
+     */
     @FXML
     protected void onViewWorkoutsClick(ActionEvent event) {
         try {

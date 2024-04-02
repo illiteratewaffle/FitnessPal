@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Make view menu gui">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalSortedController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalSorted.fxml" afterDir="false" />
+    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Add option to return to main menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalLogsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalLogsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/LogInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/LogInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/WorkoutLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/WorkoutLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalLogs.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalLogs.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/workouts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/workouts.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,7 @@
       <workItem from="1711999470866" duration="3774000" />
       <workItem from="1712003261763" duration="4789000" />
       <workItem from="1712008685673" duration="910000" />
-      <workItem from="1712009607728" duration="4387000" />
+      <workItem from="1712009607728" duration="10146000" />
     </task>
     <task id="LOCAL-00001" summary="Start Demo 3">
       <option name="closed" value="true" />
@@ -180,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712010326430</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add option to return to main menu">
+      <option name="closed" value="true" />
+      <created>1712014224798</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712014224798</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +214,7 @@
     <MESSAGE value="Make add workout gui" />
     <MESSAGE value="Link Menu and Logs together" />
     <MESSAGE value="Make view menu gui" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make view menu gui" />
+    <MESSAGE value="Add option to return to main menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add option to return to main menu" />
   </component>
 </project>

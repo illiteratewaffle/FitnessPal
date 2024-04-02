@@ -1,6 +1,5 @@
 package ca.ucalgary.cpsc.cpsc219project;
 
-import java.util.Scanner;
 
 // Renamed from "Input" to "LogInput" to make inputs for Menu Options and Workout Logs distinct.
 public class LogInput {
@@ -10,8 +9,6 @@ public class LogInput {
     private int reps;
     private int sets;
     private int currentYear;
-
-    private Scanner scanner = new Scanner(System.in);
 
 
     /**Constructor for Input
@@ -30,50 +27,50 @@ public class LogInput {
      *Expected format is yy/mm/dd 
      * @return date from user input
      */
-    public String inputDate() {
+    public String inputDate(String logDate) {
         int i;
-        String inputDate;
         char check = 'b';
         boolean validFormat = true;
         boolean validDate = false;
+        String inputDate = logDate;
 
-        do {
-            validFormat = true;
-            validDate = false;
 
-            System.out.println("Enter workout date (yy/mm/dd, ie. \"24/02/24\"): ");
-            inputDate = scanner.nextLine();
-            for(i = 0; i < inputDate.length(); i++){
-                check = inputDate.charAt(i);
-                if ((!Character.isDigit(check)) && !((i == 2) || (i == 5))) {
-                    System.err.println("Invalid input. Input must be in the form yy/mm/dd.");
-                    validFormat = false;
-                    break;
-                } else if (inputDate.length() != 8) {
-                    System.err.println("Invalid input. Input must be in the form yy/mm/dd.");
-                    validFormat = false;
-                    break;
-                }
+
+        validFormat = true;
+        validDate = false;
+
+        System.out.println("Enter workout date (yy/mm/dd, ie. \"24/02/24\"): ");
+        for(i = 0; i < inputDate.length(); i++){
+            check = inputDate.charAt(i);
+            if ((!Character.isDigit(check)) && !((i == 2) || (i == 5))) {
+                System.err.println("Invalid input. Input must be in the form yy/mm/dd.");
+                validFormat = false;
+                break;
+            } else if (inputDate.length() != 8) {
+                System.err.println("Invalid input. Input must be in the form yy/mm/dd.");
+                validFormat = false;
+                break;
             }
-            //Validates year, month and day 
-            if (validFormat) {
-                String inputYear = String.valueOf(inputDate.charAt(0)) + String.valueOf(inputDate.charAt(1));
-                int valueYear = Integer.valueOf(inputYear);
+        }
+        //Validates year, month and day
+        if (validFormat) {
+            String inputYear = String.valueOf(inputDate.charAt(0)) + String.valueOf(inputDate.charAt(1));
+            int valueYear = Integer.valueOf(inputYear);
 
-                String inputMonth = String.valueOf(inputDate.charAt(3)) + String.valueOf(inputDate.charAt(4));
-                int valueMonth = Integer.valueOf(inputMonth);
+            String inputMonth = String.valueOf(inputDate.charAt(3)) + String.valueOf(inputDate.charAt(4));
+            int valueMonth = Integer.valueOf(inputMonth);
 
-                String inputDay = String.valueOf(inputDate.charAt(6)) + String.valueOf(inputDate.charAt(7));
-                int valueDay = Integer.valueOf(inputDay);
+            String inputDay = String.valueOf(inputDate.charAt(6)) + String.valueOf(inputDate.charAt(7));
+            int valueDay = Integer.valueOf(inputDay);
 
-                if ((valueYear < 0) || (valueYear > currentYear) || (valueMonth > 12) || (valueMonth <= 0) || (valueDay <= 0) || (valueDay > 31)) {
-                    System.err.println("Invalid date! Please enter a valid date");
-                } else {
-                    validDate = true;
-                }
+            if ((valueYear < 0) || (valueYear > currentYear) || (valueMonth > 12) || (valueMonth <= 0) || (valueDay <= 0) || (valueDay > 31)) {
+                System.err.println("Invalid date! Please enter a valid date");
+            } else {
+                validDate = true;
             }
+        }
 
-        } while (( (!Character.isDigit(check)) && !((i == 2) || (i == 5))) || (inputDate.length() != 8) || !validDate );
+
 
         return inputDate;
     }
@@ -83,9 +80,9 @@ public class LogInput {
      *
      * @return exercise from user input
      */
-    public String inputExercise(){
+    public String inputExercise(String logExercise){
         System.out.println("Enter workout name (ie. \"Bench Press\", \"Deadlift\", \"Squat\", etc.): ");
-        String inputExercise = scanner.nextLine();
+        String inputExercise = logExercise;
 
         return inputExercise.toUpperCase();
     }
@@ -95,21 +92,18 @@ public class LogInput {
      *
      * @return sets
      */
-    public int inputSets() {
-        String stringSets;
+    public int inputSets(String logSets) {
+        String stringSets = logSets;
         char check = 'b';
 
-        do {
-            System.out.println("Enter amount of sets (ie. 3, 4, 5, etc.): ");
-            stringSets = scanner.nextLine();
-            for (int i = 0; i < stringSets.length(); i++) {
-                check = stringSets.charAt(i);
-                if (!Character.isDigit(check)) {
-                    System.out.println("Invalid input. Input must be a non-negative integer.");
-                    break;
-                }
+        System.out.println("Enter amount of sets (ie. 3, 4, 5, etc.): ");
+        for (int i = 0; i < stringSets.length(); i++) {
+            check = stringSets.charAt(i);
+            if (!Character.isDigit(check)) {
+                System.out.println("Invalid input. Input must be a non-negative integer.");
+                break;
             }
-        } while (!Character.isDigit(check) || stringSets.isEmpty());
+        }
 
         int inputSets = Integer.parseInt(stringSets);
         return inputSets;
@@ -120,21 +114,20 @@ public class LogInput {
      *
      * @return reps
      */
-    public int inputReps(){
-        String stringReps;
+    public int inputReps(String logReps){
+        String stringReps = logReps;
         char check = 'b';
 
-        do {
-            System.out.println("Enter amount of reps (ie. 6, 8, 12, etc.): ");
-            stringReps = scanner.nextLine();
-            for(int i = 0; i < stringReps.length(); i++){
-                check = stringReps.charAt(i);
-                if (!Character.isDigit(check)) {
-                    System.out.println("Invalid input. Input must be a non-negative integer.");
-                    break;
-                }
+
+        System.out.println("Enter amount of reps (ie. 6, 8, 12, etc.): ");
+        for(int i = 0; i < stringReps.length(); i++){
+            check = stringReps.charAt(i);
+            if (!Character.isDigit(check)) {
+                System.out.println("Invalid input. Input must be a non-negative integer.");
+                break;
             }
-        } while(!Character.isDigit(check) || stringReps.isEmpty());
+        }
+
 
         int inputReps = Integer.parseInt(stringReps);
         return inputReps;

@@ -14,6 +14,11 @@ public class FitnessPalSortedController {
 
     private Stage stage;
 
+    /**
+     * When you press "Return to Menu"
+     *
+     * @param event
+     */
     @FXML
     protected void onReturnClick(ActionEvent event) {
         try {
