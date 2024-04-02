@@ -75,6 +75,7 @@ public class FitnessPalLogsController {
 
     /**
      * Takes the information given in the text fields and writes it to file.
+     * Check user input validity.
      *
      * @param Date
      * @param Exercise
