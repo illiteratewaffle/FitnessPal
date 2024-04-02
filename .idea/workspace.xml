@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Create function: add to file via gui">
+    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="forgot to add small comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalLogsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalLogsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/LogInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/LogInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalViewController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +110,7 @@
       <workItem from="1712003261763" duration="4789000" />
       <workItem from="1712008685673" duration="910000" />
       <workItem from="1712009607728" duration="10376000" />
-      <workItem from="1712093718266" duration="2439000" />
+      <workItem from="1712093718266" duration="3271000" />
     </task>
     <task id="LOCAL-00001" summary="Start Demo 3">
       <option name="closed" value="true" />
@@ -193,7 +192,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712037114642</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Error handling included when writing workouts to file">
+      <option name="closed" value="true" />
+      <created>1712096731270</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712096731270</updated>
+    </task>
+    <task id="LOCAL-00012" summary="forgot to add small comment">
+      <option name="closed" value="true" />
+      <created>1712096975786</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712096975786</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +236,8 @@
     <MESSAGE value="Make view menu gui" />
     <MESSAGE value="Add option to return to main menu" />
     <MESSAGE value="Create function: add to file via gui" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create function: add to file via gui" />
+    <MESSAGE value="Error handling included when writing workouts to file" />
+    <MESSAGE value="forgot to add small comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="forgot to add small comment" />
   </component>
 </project>
