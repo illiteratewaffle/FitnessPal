@@ -60,7 +60,7 @@ public class FitnessPalLogsController {
             errorLabel.setText("");
 
             String logDate = Date.getText();
-            String logExercise = Exercise.getText();
+            String logExercise = Exercise.getText().toUpperCase();
             String logSets = Sets.getText();
             String logReps = Reps.getText();
 
@@ -69,7 +69,7 @@ public class FitnessPalLogsController {
         } catch (NumberFormatException e) {
             errorLabel.setText("Enter numbers only for Sets and/or Reps. (e.g. 3, 8, 12)");
         } catch (Exception e) {
-            System.out.println("strange... an error occurred.");
+            errorLabel.setText("bro you gotta enter something in first...");
         }
     }
 
@@ -83,15 +83,37 @@ public class FitnessPalLogsController {
      */
     private void logInput(String Date, String Exercise, String Sets, String Reps) {
         LogInput logInput = new LogInput();
-        String logDate = logInput.inputDate(Date);
-        String logExercise = logInput.inputExercise(Exercise);
-        int logSets = logInput.inputSets(Sets);
-        int logReps = logInput.inputReps(Reps);
+        boolean validDate = logInput.inputDate(Date);
+        boolean validExercise = logInput.inputExercise(Exercise);
+        boolean validSets = logInput.inputSets(Sets);
+        boolean validReps = logInput.inputReps(Reps);
 
-        // everything works but todo: make sure user gets error message on gui
+        boolean okayToLog = true;
 
-        WorkoutLog workoutLog = new WorkoutLog(logDate, logExercise, logSets, logReps);
-        Write.writeFile(workoutLog.toWriteFile());
+        if (!validDate) {
+            errorLabel.setText("Invalid input. Input must be a valid day in the form yy/mm/dd.");
+            okayToLog = false;
+        }
+        if (!validExercise) {
+            errorLabel.setText("Invalid Input. Please enter an exercise name");
+            okayToLog = false;
+        }
+        if (!validSets) {
+            errorLabel.setText("Invalid input. Input must be a non-negative integer.");
+            okayToLog = false;
+        }
+        if (!validReps) {
+            errorLabel.setText("Invalid input. Input must be a non-negative integer.");
+            okayToLog = false;
+        }
+
+        if (okayToLog) {
+            int intSets = Integer.parseInt(Sets);
+            int intReps = Integer.parseInt(Reps);
+
+            WorkoutLog workoutLog = new WorkoutLog(Date, Exercise, intSets, intReps);
+            Write.writeFile(workoutLog.toWriteFile());
+        }
     }
 
 }

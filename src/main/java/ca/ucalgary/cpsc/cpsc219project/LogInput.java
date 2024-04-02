@@ -27,7 +27,7 @@ public class LogInput {
      *Expected format is yy/mm/dd 
      * @return date from user input
      */
-    public String inputDate(String logDate) {
+    public boolean inputDate(String logDate) {
         int i;
         char check = 'b';
         boolean validFormat = true;
@@ -70,9 +70,7 @@ public class LogInput {
             }
         }
 
-
-
-        return inputDate;
+        return (validFormat && validDate);
     }
 
     /**Gets user input for exercise name.
@@ -80,11 +78,10 @@ public class LogInput {
      *
      * @return exercise from user input
      */
-    public String inputExercise(String logExercise){
+    public boolean inputExercise(String logExercise){
         System.out.println("Enter workout name (ie. \"Bench Press\", \"Deadlift\", \"Squat\", etc.): ");
-        String inputExercise = logExercise;
 
-        return inputExercise.toUpperCase();
+        return !logExercise.isEmpty();
     }
 
     /**Gets user input for sets
@@ -92,21 +89,22 @@ public class LogInput {
      *
      * @return sets
      */
-    public int inputSets(String logSets) {
+    public boolean inputSets(String logSets) {
         String stringSets = logSets;
         char check = 'b';
+        boolean validSets = true;
 
         System.out.println("Enter amount of sets (ie. 3, 4, 5, etc.): ");
         for (int i = 0; i < stringSets.length(); i++) {
             check = stringSets.charAt(i);
             if (!Character.isDigit(check)) {
                 System.out.println("Invalid input. Input must be a non-negative integer.");
+                validSets = false;
                 break;
             }
         }
 
-        int inputSets = Integer.parseInt(stringSets);
-        return inputSets;
+        return validSets;
     }
 
     /**Gets user input for reps
@@ -114,23 +112,22 @@ public class LogInput {
      *
      * @return reps
      */
-    public int inputReps(String logReps){
+    public boolean inputReps(String logReps){
         String stringReps = logReps;
         char check = 'b';
-
+        boolean validReps = true;
 
         System.out.println("Enter amount of reps (ie. 6, 8, 12, etc.): ");
         for(int i = 0; i < stringReps.length(); i++){
             check = stringReps.charAt(i);
             if (!Character.isDigit(check)) {
                 System.out.println("Invalid input. Input must be a non-negative integer.");
+                validReps = false;
                 break;
             }
         }
 
-
-        int inputReps = Integer.parseInt(stringReps);
-        return inputReps;
+        return validReps;
     }
 
 }
