@@ -30,6 +30,7 @@ public class FitnessPalViewController {
 
             sortedController.loadTitle(sortBy);
             sortedController.loadLogs(sortBy);
+            sortedController.calculateLogs();
 
             stage.setTitle("Sorting by Recently Added");
             stage.setScene(scene);
@@ -55,6 +56,7 @@ public class FitnessPalViewController {
 
             sortedController.loadTitle(sortBy);
             sortedController.loadLogs(sortBy);
+            sortedController.calculateLogs();
 
             stage.setTitle("Sorting by Exercise");
             stage.setScene(scene);
@@ -79,6 +81,7 @@ public class FitnessPalViewController {
 
             sortedController.loadTitle(sortBy);
             sortedController.loadLogs(sortBy);
+            sortedController.calculateLogs();
 
             stage.setTitle("Sorting by Date");
             stage.setScene(scene);

@@ -21,10 +21,13 @@ public class Read extends Files {
 
     /**
      *
-     * Read constructor
+     * Read constructors
      */
     public Read(String sortBy) {
         this.choice = sortBy;
+        this.lines = countLines();
+    }
+    public Read() {
         this.lines = countLines();
     }
 

@@ -21,11 +21,29 @@ public class FitnessPalSortedController {
     private ScrollPane workouts;
     @FXML
     private Label sortType;
+    @FXML
+    private Label totalDays;
+    @FXML
+    private Label totalExercises;
+    @FXML
+    private Label totalSets;
+    @FXML
+    private Label totalReps;
 
+    /**
+     * Sets the heading of Sorted Menu to user's selection
+     *
+     * @param sortBy
+     */
     public void loadTitle(String sortBy) {
         sortType.setText(sortBy);
     }
 
+    /**
+     * Loads sorted logs into ScrollPane
+     *
+     * @param sortBy
+     */
     public void loadLogs(String sortBy) {
         Read reader = new Read(sortBy);
         ArrayList<String> logsList = reader.sort(reader.getChoice());
@@ -37,7 +55,16 @@ public class FitnessPalSortedController {
             vbox.getChildren().add(label);
         }
         workouts.setContent(vbox);
+    }
 
+    public void calculateLogs() {
+        Read reader = new Read();
+        Counter counter = new Counter(reader.getLines());
+        ArrayList<String> calculationMessages = counter.displayCount();
+        totalDays.setText(calculationMessages.get(0));
+        totalExercises.setText(calculationMessages.get(1));
+        totalSets.setText(calculationMessages.get(2));
+        totalReps.setText(calculationMessages.get(3));
     }
 
     /**

@@ -36,14 +36,21 @@ public class Counter extends Files {
      * Counts how many sets you've done in total
      * Counts how many reps you've done in total
      */
-    public void displayCount() {
+    public ArrayList<String> displayCount() {
+
+        ArrayList<String> calculationMessages = new ArrayList<>();
 
          // Preparing messages to display the counted statistics
         String daysMessage = "Total Days of Exercising: " + countDates;
         String exercisesMessage = "Total Exercises Done: " + countExercises;
         String setsMessage = "Total Sets Done: " + countSets;
         String repsMessage = "Total Reps Done: " + countReps;
-        
+
+        calculationMessages.add(daysMessage);
+        calculationMessages.add(exercisesMessage);
+        calculationMessages.add(setsMessage);
+        calculationMessages.add(repsMessage);
+
         System.out.println("Your Statistics:");
         System.out.println(daysMessage);
         System.out.println(exercisesMessage);
@@ -52,6 +59,7 @@ public class Counter extends Files {
 
         System.out.println("Great job!");
 
+        return calculationMessages;
     }
 
     /**
