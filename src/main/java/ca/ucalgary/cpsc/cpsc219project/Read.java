@@ -67,41 +67,6 @@ public class Read extends Files {
         return lines;
     }
 
-    /**User chooses how they want to sort their exercises
-     * Includes error checking. Will reprompt for input if initial input is invalid.
-     *
-     * @return user's choice
-     */
-    private String chooseSort() {
-        Scanner scanner = new Scanner(System.in);
-        String choice;
-        //String choiceUppercase;
-        boolean valid;
-        do {
-            System.out.println("Choose how you want your workouts to be sorted with the options below");
-            System.out.println("Type \"Recent\" to sort by recent");
-            System.out.println("Type \"Date\" to sort by chronological order");
-            System.out.println("Type \"Exercise\" to sort by alphabetical order");
-
-            choice = scanner.nextLine();
-            choice = choice.toUpperCase();
-            //System.out.println(choice);
-
-            switch (choice) {
-                case "RECENT", "EXERCISE", "DATE":
-                    valid = true;
-                    break;
-
-                default:
-                    System.out.println("Invalid input.");
-                    valid = false;
-                    break;
-            }
-        } while (!valid);
-
-        return choice;
-    }
-
     /**
      * User has the option to choose how the file is read.
      * - By Recently Added,
