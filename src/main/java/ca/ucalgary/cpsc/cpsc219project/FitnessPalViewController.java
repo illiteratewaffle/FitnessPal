@@ -6,7 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -14,18 +13,23 @@ import java.io.IOException;
 public class FitnessPalViewController {
 
     private Stage stage;
-    private Button Recent;
-    private Button Exercise;
-    private Button Date;
+
+    private String sortBy;
 
     @FXML
     protected void onSortByRecentClick(ActionEvent event) {
 
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("FitnessPalSorted.fxml"));
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        sortBy = "RECENT";
 
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FitnessPalSorted.fxml"));
+            Parent root = fxmlLoader.load();
+            FitnessPalSortedController sortedController = fxmlLoader.getController();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(root, 600, 400);
+
+            sortedController.loadTitle(sortBy);
+            sortedController.loadLogs(sortBy);
 
             stage.setTitle("Sorting by Recently Added");
             stage.setScene(scene);
@@ -35,17 +39,22 @@ public class FitnessPalViewController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 
     @FXML
     protected void onSortByExerciseClick(ActionEvent event) {
 
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("FitnessPalSorted.fxml"));
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        sortBy = "EXERCISE";
 
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FitnessPalSorted.fxml"));
+            Parent root = fxmlLoader.load();
+            FitnessPalSortedController sortedController = fxmlLoader.getController();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(root, 600, 400);
+
+            sortedController.loadTitle(sortBy);
+            sortedController.loadLogs(sortBy);
 
             stage.setTitle("Sorting by Exercise");
             stage.setScene(scene);
@@ -55,17 +64,21 @@ public class FitnessPalViewController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 
     @FXML
     protected void onSortByDateClick(ActionEvent event) {
+        sortBy = "DATE";
 
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("FitnessPalSorted.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FitnessPalSorted.fxml"));
+            Parent root = fxmlLoader.load();
+            FitnessPalSortedController sortedController = fxmlLoader.getController();
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
             Scene scene = new Scene(root, 600, 400);
+
+            sortedController.loadTitle(sortBy);
+            sortedController.loadLogs(sortBy);
 
             stage.setTitle("Sorting by Date");
             stage.setScene(scene);
@@ -75,11 +88,6 @@ public class FitnessPalViewController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    @FXML
-    protected void openSortedMenu() {
-
     }
 
 }

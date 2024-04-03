@@ -16,24 +16,15 @@ public class Read extends Files {
 
     private int lines;
 
-    // for testing purposes
     private static String testFileDirectory;
-    /**
-     * Constructor ONLY for passing in test cases
-     * @param testFileDirectory
-     */
-    public Read(String testFileDirectory){
-        this.testFileDirectory = testFileDirectory;
-
-    }
 
 
     /**
      *
      * Read constructor
      */
-    public Read() {
-        this.choice = chooseSort();
+    public Read(String sortBy) {
+        this.choice = sortBy;
         this.lines = countLines();
     }
 
@@ -114,32 +105,38 @@ public class Read extends Files {
      * - By Date , or
      * - By Exercise (alphabetical order)
      */
-    public void sort(String choice) {
+    public ArrayList<String> sort(String choice) {
+        ArrayList<String> logsList = new ArrayList<>();
+
         try {
             File file = openFile();
             FileReader file_reader = new FileReader(file);
             BufferedReader buffered_reader = new BufferedReader(file_reader);
 
+            logsList = new ArrayList<>();
+
             switch (choice) {
                 case "RECENT":
-                    sortByRecent(buffered_reader);
+                    logsList = sortByRecent(buffered_reader);
                     break;
                 case "EXERCISE":
-                    sortByExercise(buffered_reader);
+                    logsList = sortByExercise(buffered_reader);
                     break;
                 case "DATE":
-                    sortByDate(buffered_reader);
+                    logsList = sortByDate(buffered_reader);
                     break;
             }
 
             buffered_reader.close();
-        } catch (FileNotFoundException e){
+        } catch (FileNotFoundException e) {
             System.out.println("File invalid.");
             System.exit(1);
         } catch (IOException e) {
             System.out.println("File invalid.");
             throw new RuntimeException(e);
         }
+
+        return logsList;
     }
 
     /**
@@ -147,15 +144,19 @@ public class Read extends Files {
      * This reads the file and outputs exactly what the file says.
      * Outputs into the terminal, does not modify file.
      */
-    private void sortByRecent(BufferedReader buffered_reader) throws IOException {
+    private ArrayList<String> sortByRecent(BufferedReader buffered_reader) throws IOException {
+        ArrayList<String> logsList = new ArrayList<>();
         String fileLine = buffered_reader.readLine();
 
         while (fileLine != null) {
+            logsList.add(fileLine);
             System.out.println(fileLine);
             fileLine = buffered_reader.readLine();
         }
 
         buffered_reader.close();
+
+        return logsList;
     }
 
     /**
@@ -164,7 +165,8 @@ public class Read extends Files {
      * Sorts the ArrayList using java.util.Collections
      * Prints the file in chronological order.
      */
-    private void sortByDate(BufferedReader buffered_reader) throws IOException {
+    private ArrayList<String> sortByDate(BufferedReader buffered_reader) throws IOException {
+        ArrayList<String> logsList = new ArrayList<>();
         ArrayList<String> sortedByDate = new ArrayList<>();
 
         String aLine;
@@ -175,8 +177,11 @@ public class Read extends Files {
         Collections.sort(sortedByDate);
 
         for(String printLine : sortedByDate){
+            logsList.add(printLine);
             System.out.println(printLine);
         }
+
+        return logsList;
     }
 
     /**
@@ -191,7 +196,8 @@ public class Read extends Files {
      * Looked up string methods, how to split a string at the first space:
      * https://www.geeksforgeeks.org/split-string-java-examples/
      */
-    private void sortByExercise(BufferedReader buffered_reader) throws IOException {
+    private ArrayList<String> sortByExercise(BufferedReader buffered_reader) throws IOException {
+        ArrayList<String> logsList = new ArrayList<>();
         ArrayList<String> sortedByExercise = new ArrayList<>();
 
         String aLine;
@@ -215,7 +221,10 @@ public class Read extends Files {
 
         for(int i = 0; i < sortedDateAndExercise.size(); i++){
             System.out.println(sortedDateAndExercise.get(i));
+            logsList.add(sortedDateAndExercise.get(i));
         }
+
+        return logsList;
     }
 
     public String getChoice() {

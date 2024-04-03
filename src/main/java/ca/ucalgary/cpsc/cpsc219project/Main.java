@@ -39,13 +39,13 @@ public class Main {
                     break;
 
                 case VIEW:
-                    Read reader = new Read();
-                    reader.sort(reader.getChoice());
-
-                    System.out.println();
-
-                    Counter counter = new Counter(reader.getLines());
-                    counter.displayCount();
+//                    Read reader = new Read();
+//                    reader.sort(reader.getChoice());
+//
+//                    System.out.println();
+//
+//                    Counter counter = new Counter(reader.getLines());
+//                    counter.displayCount();
 
                     break;
 
