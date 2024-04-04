@@ -14,6 +14,7 @@ import java.io.IOException;
 
 public class FitnessPalLogsController {
 
+
     private Stage stage;
     @FXML
     private TextField Date;
