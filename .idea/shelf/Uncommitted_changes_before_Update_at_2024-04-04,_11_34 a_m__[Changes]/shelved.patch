@@ -1,0 +1,139 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"b59c40b8-7169-43d3-b4d5-889578796b61\" name=\"Changes\" comment=\"Add help button/message in main menu\">\n      <change afterPath=\"$PROJECT_DIR$/null.txt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/.txt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Harry.txt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalLoginController.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalLogin.fxml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/null.txt\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Counter.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Counter.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Files.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Files.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalApplication.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalApplication.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalLogsController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalLogsController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalSortedController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalSortedController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Read.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Read.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Write.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Write.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"FxmlFile\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitLabMergeRequestFiltersHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPENED&quot;,\n    &quot;assignee&quot;: {\n      &quot;type&quot;: &quot;org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue&quot;,\n      &quot;username&quot;: &quot;harry.hu1&quot;,\n      &quot;fullname&quot;: &quot;Harry HU&quot;\n    }\n  }\n}</component>\n  <component name=\"GitLabMergeRequestsSettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;first&quot;: &quot;https://csgit.ucalgary.ca/harry.hu1/project.git&quot;,\n    &quot;second&quot;: &quot;45371805-ca6c-4868-9bd5-31c870e9b841&quot;\n  }\n}</component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"generalSettings\">\n      <MavenGeneralSettings>\n        <option name=\"mavenHomeTypeForPersistence\" value=\"WRAPPER\" />\n      </MavenGeneralSettings>\n    </option>\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 1\n}</component>\n  <component name=\"ProjectId\" id=\"2eTuVPriMT9tmv98JvgdjXpRzFU\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\n    \"Application.FitnessPalApplication.executor\": \"Run\",\n    \"Application.FitnessPalMenuController.executor\": \"Run\",\n    \"Application.Main.executor\": \"Run\",\n    \"JUnit.CounterTest.executor\": \"Run\",\n    \"JUnit.FilesTest.executor\": \"Run\",\n    \"JUnit.ReadTest.executor\": \"Run\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"git-widget-placeholder\": \"master\",\n    \"ignore.virus.scanning.warn.message\": \"true\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"last_opened_file_path\": \"C:/Users/babyh/IdeaProjects/project/src/main/resources/ca/ucalgary/cpsc/cpsc219project\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"project.structure.last.edited\": \"Modules\",\n    \"project.structure.proportion\": \"0.0\",\n    \"project.structure.side.proportion\": \"0.0\",\n    \"settings.editor.selected.configurable\": \"inlay.hints\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\babyh\\IdeaProjects\\project\\src\\main\\resources\\ca\\ucalgary\\cpsc\\cpsc219project\" />\n      <recent name=\"D:\\University of Calgary\\Winter 2024\\Cpsc 219\\projects\\cpsc219project\\src\" />\n      <recent name=\"D:\\University of Calgary\\Winter 2024\\Cpsc 219\\projects\\cpsc219project\\src\\main\\java\\ca\\ucalgary\\cpsc\\cpsc219project\" />\n    </key>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"b59c40b8-7169-43d3-b4d5-889578796b61\" name=\"Changes\" comment=\"\" />\n      <created>1711940913871</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1711940913871</updated>\n      <workItem from=\"1711940915076\" duration=\"660000\" />\n      <workItem from=\"1711942604788\" duration=\"9634000\" />\n      <workItem from=\"1711999470866\" duration=\"3774000\" />\n      <workItem from=\"1712003261763\" duration=\"4789000\" />\n      <workItem from=\"1712008685673\" duration=\"910000\" />\n      <workItem from=\"1712009607728\" duration=\"10376000\" />\n      <workItem from=\"1712093718266\" duration=\"11809000\" />\n      <workItem from=\"1712196869582\" duration=\"9710000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Start Demo 3\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1711941479562</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1711941479562</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Revamp code for readability. All Classes from demo 2.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1711949572283</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1711949572283</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Remove a todo comment\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1711949690660</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1711949690660</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Make switch statement in main() more readable\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1711950004313</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1711950004313</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Make main menu gui\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712000922802</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712000922802</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"Make add workout gui\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712004665591</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712004665591</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"Link Menu and Logs together\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712007478973</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712007478973</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"Make view menu gui\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712010326430</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712010326430</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"Add option to return to main menu\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712014224798</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712014224798</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"Create function: add to file via gui\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712037114642</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712037114642</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"Error handling included when writing workouts to file\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712096731270</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712096731270</updated>\n    </task>\n    <task id=\"LOCAL-00012\" summary=\"forgot to add small comment\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712096975786</created>\n      <option name=\"number\" value=\"00012\" />\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712096975786</updated>\n    </task>\n    <task id=\"LOCAL-00013\" summary=\"Make View Menu buttons work\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712097509742</created>\n      <option name=\"number\" value=\"00013\" />\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712097509742</updated>\n    </task>\n    <task id=\"LOCAL-00014\" summary=\"Create display for sorted workouts\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712123109843</created>\n      <option name=\"number\" value=\"00014\" />\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712123109843</updated>\n    </task>\n    <task id=\"LOCAL-00015\" summary=\"Create display for workout calculations\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712124074468</created>\n      <option name=\"number\" value=\"00015\" />\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712124074468</updated>\n    </task>\n    <task id=\"LOCAL-00016\" summary=\"Delete redundant classes and code\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712124389810</created>\n      <option name=\"number\" value=\"00016\" />\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712124389810</updated>\n    </task>\n    <task id=\"LOCAL-00017\" summary=\"Add help button/message in main menu\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712197794463</created>\n      <option name=\"number\" value=\"00017\" />\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712197794463</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"18\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n    <MESSAGE value=\"Start Demo 3\" />\n    <MESSAGE value=\"Revamp code for readability. All Classes from demo 2.\" />\n    <MESSAGE value=\"Remove a todo comment\" />\n    <MESSAGE value=\"Make switch statement in main() more readable\" />\n    <MESSAGE value=\"Make main menu gui\" />\n    <MESSAGE value=\"Make add workout gui\" />\n    <MESSAGE value=\"Link Menu and Logs together\" />\n    <MESSAGE value=\"Make view menu gui\" />\n    <MESSAGE value=\"Add option to return to main menu\" />\n    <MESSAGE value=\"Create function: add to file via gui\" />\n    <MESSAGE value=\"Error handling included when writing workouts to file\" />\n    <MESSAGE value=\"forgot to add small comment\" />\n    <MESSAGE value=\"Make View Menu buttons work\" />\n    <MESSAGE value=\"Create display for sorted workouts\" />\n    <MESSAGE value=\"Create display for workout calculations\" />\n    <MESSAGE value=\"Delete redundant classes and code\" />\n    <MESSAGE value=\"Add help button/message in main menu\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Add help button/message in main menu\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ac598434a64b1115e58ed3c774e94162332fc3eb)
++++ b/.idea/workspace.xml	(date 1712252053852)
+@@ -4,21 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Add help button/message in main menu">
+-      <change afterPath="$PROJECT_DIR$/null.txt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/.txt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Harry.txt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalLoginController.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalLogin.fxml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/null.txt" afterDir="false" />
++    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="More descriptive output for error msges">
++      <change afterPath="$PROJECT_DIR$/src/armaan.txt" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Counter.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Files.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalApplication.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalLogsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalLogsController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalSortedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalSortedController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Read.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Write.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Write.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -52,13 +40,6 @@
+     &quot;second&quot;: &quot;45371805-ca6c-4868-9bd5-31c870e9b841&quot;
+   }
+ }</component>
+-  <component name="MavenImportPreferences">
+-    <option name="generalSettings">
+-      <MavenGeneralSettings>
+-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+-      </MavenGeneralSettings>
+-    </option>
+-  </component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 1
+ }</component>
+@@ -70,34 +51,34 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_ADD_EXTERNAL_FILES": "true",
+-    "Application.FitnessPalApplication.executor": "Run",
+-    "Application.FitnessPalMenuController.executor": "Run",
+-    "Application.Main.executor": "Run",
+-    "JUnit.CounterTest.executor": "Run",
+-    "JUnit.FilesTest.executor": "Run",
+-    "JUnit.ReadTest.executor": "Run",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "git-widget-placeholder": "master",
+-    "ignore.virus.scanning.warn.message": "true",
+-    "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "C:/Users/babyh/IdeaProjects/project/src/main/resources/ca/ucalgary/cpsc/cpsc219project",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "project.structure.last.edited": "Modules",
+-    "project.structure.proportion": "0.0",
+-    "project.structure.side.proportion": "0.0",
+-    "settings.editor.selected.configurable": "inlay.hints",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
++    &quot;Application.FitnessPalApplication.executor&quot;: &quot;Run&quot;,
++    &quot;Application.FitnessPalMenuController.executor&quot;: &quot;Run&quot;,
++    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.CounterTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.FilesTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.ReadTest.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/babyh/IdeaProjects/project/src/main/resources/ca/ucalgary/cpsc/cpsc219project&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\babyh\IdeaProjects\project\src\main\resources\ca\ucalgary\cpsc\cpsc219project" />
+@@ -265,7 +246,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1712197794463</updated>
+     </task>
+-    <option name="localTasksCounter" value="18" />
++    <task id="LOCAL-00018" summary="More descriptive output for error msges">
++      <option name="closed" value="true" />
++      <created>1712208892998</created>
++      <option name="number" value="00018" />
++      <option name="presentableId" value="LOCAL-00018" />
++      <option name="project" value="LOCAL" />
++      <updated>1712208892999</updated>
++    </task>
++    <option name="localTasksCounter" value="19" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -301,6 +290,7 @@
+     <MESSAGE value="Create display for workout calculations" />
+     <MESSAGE value="Delete redundant classes and code" />
+     <MESSAGE value="Add help button/message in main menu" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Add help button/message in main menu" />
++    <MESSAGE value="More descriptive output for error msges" />
++    <option name="LAST_COMMIT_MESSAGE" value="More descriptive output for error msges" />
+   </component>
+ </project>
+\ No newline at end of file
+diff --git a/src/armaan.txt b/src/armaan.txt
+new file mode 100644
