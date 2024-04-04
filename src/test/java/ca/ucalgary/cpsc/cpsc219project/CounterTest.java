@@ -29,12 +29,13 @@ class CounterTest {
 
     @Test
     void countSets() {
+        Counter counter = new Counter(5);
+        ArrayList<WorkoutLog> workoutLogs = counter.getInformation();
+
         int expected = 26;
+        int actual = counter.countSets(workoutLogs);
 
-        int toCheck = Counter.countSets(Counter.getInformation());
-
-        boolean result = (toCheck == expected);
-        assertTrue(result, "There should be 26 sets in the file");
+        assertEquals(expected, actual, "There should be 26 sets in the file, test should have passed");
 
     }
 
