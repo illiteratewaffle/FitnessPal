@@ -29,10 +29,7 @@ class LogInputTest {
 
         System.out.println("press enter and you will be reprompted.");
         System.out.println("type \"12/12/12\" and itll be correct.");
-        String toCheck = testLogInput.inputDate();
-
-        boolean result = (expected.equals(toCheck));
-        assertTrue(result, "should be true (if you enter 121212)");
+        assertTrue(testLogInput.inputDate(expected), "should be true (if you enter 121212)");
     }
 
     @Test

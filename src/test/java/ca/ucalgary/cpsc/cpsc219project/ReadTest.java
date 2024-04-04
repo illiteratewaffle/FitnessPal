@@ -7,11 +7,7 @@ import java.io.File;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ReadTest {
-    /**
-     * Tests the countLines method in the Read class with a basic input file.
-     * The test file is expected to have four lines.
-     * This test verifies that countLines accurately counts the number of lines in the file.
-     */
+    //Ensure that "countLines" works properly  
     @Test
     void test_Read_basicFileInput() {
         String testFilename = "testFileBasic.txt";
