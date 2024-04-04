@@ -3,6 +3,7 @@ package ca.ucalgary.cpsc.cpsc219project;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+class CounterTest {
 @Test
     void countDates() {
         Counter counter = new Counter(5);
