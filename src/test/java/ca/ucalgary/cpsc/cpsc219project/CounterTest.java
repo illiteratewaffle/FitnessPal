@@ -13,17 +13,18 @@ class CounterTest {
         int expected = 5;
         int actual = counter.countDates(workoutLogs);
 
-        assertEquals(expected, actual, "There should be 5 days in the file");
+        assertEquals(expected, actual, "There should be 5 days in the file, test should have passed");
     }
 
     @Test
     void countExercises() {
+        Counter counter = new Counter(5);
+        ArrayList<WorkoutLog> workoutLogs = counter.getInformation();
         int expected = 8;
-
-        int toCheck = Counter.countExercises(Counter.getInformation());
+        int toCheck = counter.countExercises(workoutLogs);
 
         boolean result = (toCheck == expected);
-        assertTrue(result, "There should be 8 exercises in the file");
+        assertTrue(result, "There should be 8 exercises in the file. Test should have passed");
     }
 
     @Test
