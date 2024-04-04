@@ -23,14 +23,9 @@ class LogInputTest {
     @Test
     void testInputDate_correct() {
         LogInput testLogInput = new LogInput();
-        String expected = "12/12/12";
-
-        System.out.println("type \"12/12/12\"");
-        //System.in.("12/12/12");
-        String toCheck = testLogInput.inputDate();
-
-        boolean result = (expected.equals(toCheck));
-        assertTrue(result, "should be true (if you enter 12/12/12)");
+        String input = "12/12/12";
+        // Call the method with the string input
+        assertTrue(testLogInput.inputDate(input), "The input date should be valid.");
     }
 
     @Test
