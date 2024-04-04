@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class WriteTest {
-
+    //verifies if the file creation process works as expected
     @Test
     public void testWriteFile() {
         // Defines the file path

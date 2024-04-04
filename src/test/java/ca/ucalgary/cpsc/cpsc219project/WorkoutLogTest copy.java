@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class WorkoutLogTest {
 
     @Test
+    //Checks if "workoutLog" initializes objects correctly
     void test_WorkoutLog_validEntry(){
         String testDate = "22/22/22";
         String testExercise = "testExercise";
