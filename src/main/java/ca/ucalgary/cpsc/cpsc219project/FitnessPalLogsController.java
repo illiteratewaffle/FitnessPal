@@ -98,11 +98,11 @@ public class FitnessPalLogsController {
             okayToLog = false;
         }
         if (!validExercise) {
-            errorLabel.setText("Invalid Input. Please enter an exercise name");
+            errorLabel.setText("Invalid Input. Please enter an exercise name!");
             okayToLog = false;
         }
         if (!validSets) {
-            errorLabel.setText("Invalid input. Input must be a non-negative integer.");
+            errorLabel.setText("Invalid input. Sets must be a non-negative integer!");
             okayToLog = false;
         }
         if (!validReps) {

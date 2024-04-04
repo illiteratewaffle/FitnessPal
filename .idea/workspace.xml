@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Create display for workout calculations" />
+    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Added docs">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,13 +39,6 @@
     &quot;second&quot;: &quot;45371805-ca6c-4868-9bd5-31c870e9b841&quot;
   }
 }</component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -89,7 +84,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
       </set>
     </attachedChunks>
   </component>
@@ -229,7 +224,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712124074468</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added docs">
+      <option name="closed" value="true" />
+      <created>1712208219603</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1712208219603</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added docs">
+      <option name="closed" value="true" />
+      <created>1712208240626</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712208240626</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +273,7 @@
     <MESSAGE value="Make View Menu buttons work" />
     <MESSAGE value="Create display for sorted workouts" />
     <MESSAGE value="Create display for workout calculations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create display for workout calculations" />
+    <MESSAGE value="Added docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added docs" />
   </component>
 </project>
