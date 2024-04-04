@@ -6,20 +6,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LogInputTest {
 
-    /*
-    For these tests, I cant seem to find any articles online on
-    how to make an input.
-
-    These tests don't work but they are ideas.
-    These have been tested manually by running the program, but I can't find a way to automatically do them.
-
-    Tried:
-    - Typing into terminal
-    - System.in
-
-    Out of ideas.
-     */
-
     @Test
     void testInputDate_correct() {
         LogInput testLogInput = new LogInput();
