@@ -9,6 +9,7 @@ import java.io.IOException;
 
 public class FitnessPalApplication extends Application {
 
+    //Launchsite for the application
     public static void main(String[] args) {
         launch(args);
     }
