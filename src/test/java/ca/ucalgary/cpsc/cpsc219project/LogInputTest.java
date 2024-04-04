@@ -31,14 +31,9 @@ class LogInputTest {
     @Test
     void testInputDate_incorrect() {
         LogInput testLogInput = new LogInput();
-        String expected = "12/12/12";
-
-        System.out.println("type \"121212\" and you will be reprompted.");
-        System.out.println("type \"12/12/12\" and itll be correct.");
-        String toCheck = testLogInput.inputDate();
-
-        boolean result = (expected.equals(toCheck));
-        assertTrue(result, "should be true (if you enter 121212)");
+        String input = "121212";
+        // Call the method with the string input
+        assertFalse(testLogInput.inputDate(input), "The input date should be invalid.");
     }
 
     @Test
@@ -57,25 +52,16 @@ class LogInputTest {
     @Test
     void testInputSets_correct() {
         LogInput testLogInput = new LogInput();
-        int expected = 3;
-
-        System.out.println("type \"3\"");
-        int toCheck = testLogInput.inputSets();
-
-        boolean result = (expected == toCheck);
-        assertTrue(result, "should be true (if you enter 3)");
+        String input = "3";
+        // Call the method with the string input
+        assertTrue(testLogInput.inputSets(input), "The input sets should be valid.");
     }
-
 
     @Test
     void testInputReps_correct() {
         LogInput testLogInput = new LogInput();
-        int expected = 12;
-
-        System.out.println("type \"12\"");
-        int toCheck = testLogInput.inputReps();
-
-        boolean result = (expected == toCheck);
-        assertTrue(result, "should be true (if you enter 12)");
+        String input = "12";
+        // Call the method with the string input
+        assertTrue(testLogInput.inputReps(input), "The input reps should be valid.");
     }
 }
