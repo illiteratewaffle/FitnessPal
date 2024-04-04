@@ -15,7 +15,7 @@ public class FitnessPalApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(FitnessPalApplication.class.getResource("FitnessPalMenu.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(FitnessPalApplication.class.getResource("FitnessPalLogin.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 480, 240);
 
         stage.setTitle("FitnessPal");

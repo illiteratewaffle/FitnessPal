@@ -1,22 +1,45 @@
 package ca.ucalgary.cpsc.cpsc219project;
 
 import java.io.File;
+import java.io.IOException;
 
 /**
  * Redundant class but want to show that we understand how inheritance and visibility modifiers work.
- * Static methods because there's only 1 file so we don't need to create Files object.
- * Abstract class: to not allow object type Files to be created
  */
-public abstract class Files {
+public class Files {
 
-    protected static final String PATH = "src/workouts.txt";
+    protected String path;
+    protected String username = FitnessPalLoginController.getUsername();
+
+    public Files() {
+        this.path = null;
+    }
 
     /**Opens src/workouts.txt
      *
      * @return File
      */
-    public static File openFile() {
-        File file = new File(PATH);
+    public File openFile(String username) {
+        //this.username = username;
+
+        String testPathName = "src/" +username + ".txt";
+        File file = null;
+
+        try {
+            file = new File(testPathName);
+            if (file.createNewFile()) {
+                System.out.println(file.getName() + " was created" );
+
+            } else {
+                System.out.println("file already exists" );
+
+            }
+
+            this.path = testPathName;
+
+        } catch (IOException e) {
+            System.out.println("An error occurred." );
+        }
 
         return file;
     }

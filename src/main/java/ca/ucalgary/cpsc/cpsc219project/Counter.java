@@ -15,8 +15,12 @@ public class Counter extends Files {
     private int countExercises;
     private int countSets;
     private int countReps;
+    private String username;
+    private Files files = new Files();
      
     public Counter(int lines){
+
+        this.username = FitnessPalLoginController.getUsername();
 
         this.LINES = lines;
 
@@ -36,7 +40,7 @@ public class Counter extends Files {
      * Counts how many sets you've done in total
      * Counts how many reps you've done in total
      */
-    public ArrayList<String> displayCount() {
+    public ArrayList<String> countStats() {
 
         ArrayList<String> calculationMessages = new ArrayList<>();
 
@@ -72,7 +76,7 @@ public class Counter extends Files {
         ArrayList<WorkoutLog> workouts = new ArrayList<WorkoutLog>();
 
         try {
-            File file = openFile();
+            File file = files.openFile(username);
             FileReader file_reader = new FileReader(file);
             BufferedReader buffered_reader = new BufferedReader(file_reader);
 
@@ -166,19 +170,4 @@ public class Counter extends Files {
         return numberReps;
     }
 
-    public int getCountDates() {
-        return countDates;
-    }
-
-    public int getCountExercises() {
-        return countExercises;
-    }
-
-    public int getCountSets() {
-        return countSets;
-    }
-
-    public int getCountReps() {
-        return countReps;
-    }
 }
