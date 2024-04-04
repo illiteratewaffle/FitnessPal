@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Adding to counter tests" />
+    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Removed == from string using tests">
+      <change afterPath="$PROJECT_DIR$/src/null.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/ucalgary/cpsc/cpsc219project/LogInputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/ucalgary/cpsc/cpsc219project/LogInputTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,8 +59,10 @@
     "Application.FitnessPalMenuController.executor": "Run",
     "Application.Main.executor": "Run",
     "JUnit.CounterTest.countDates.executor": "Run",
+    "JUnit.CounterTest.countExercises.executor": "Run",
     "JUnit.CounterTest.executor": "Run",
     "JUnit.FilesTest.executor": "Run",
+    "JUnit.LogInputTest.testInputDate_nothing.executor": "Run",
     "JUnit.ReadTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -84,7 +90,7 @@
       <recent name="D:\University of Calgary\Winter 2024\Cpsc 219\projects\cpsc219project\src\main\java\ca\ucalgary\cpsc\cpsc219project" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CounterTest.countExercises">
     <configuration name="CounterTest.countDates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cpsc219project" />
       <extension name="coverage">
@@ -101,9 +107,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CounterTest.countExercises" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cpsc219project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.ucalgary.cpsc.cpsc219project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.ucalgary.cpsc.cpsc219project" />
+      <option name="MAIN_CLASS_NAME" value="ca.ucalgary.cpsc.cpsc219project.CounterTest" />
+      <option name="METHOD_NAME" value="countExercises" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogInputTest.testInputDate_nothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cpsc219project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.ucalgary.cpsc.cpsc219project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.ucalgary.cpsc.cpsc219project" />
+      <option name="MAIN_CLASS_NAME" value="ca.ucalgary.cpsc.cpsc219project.LogInputTest" />
+      <option name="METHOD_NAME" value="testInputDate_nothing" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CounterTest.countExercises" />
         <item itemvalue="JUnit.CounterTest.countDates" />
+        <item itemvalue="JUnit.LogInputTest.testInputDate_nothing" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +331,31 @@
       <option name="project" value="LOCAL" />
       <updated>1712253445471</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Fixed countSets in counterTests">
+      <option name="closed" value="true" />
+      <created>1712253620985</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1712253620985</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Fixed countSets in counterTests">
+      <option name="closed" value="true" />
+      <created>1712253628675</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1712253628675</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Removed == from string using tests">
+      <option name="closed" value="true" />
+      <created>1712253694076</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1712253694076</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,6 +394,8 @@
     <MESSAGE value="More descriptive output for error msges" />
     <MESSAGE value="Fixing issue with counter tests." />
     <MESSAGE value="Adding to counter tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding to counter tests" />
+    <MESSAGE value="Fixed countSets in counterTests" />
+    <MESSAGE value="Removed == from string using tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed == from string using tests" />
   </component>
 </project>

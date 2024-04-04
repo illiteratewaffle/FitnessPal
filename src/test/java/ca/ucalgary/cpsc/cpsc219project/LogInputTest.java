@@ -28,11 +28,13 @@ class LogInputTest {
         String expected = "12/12/12";
 
         System.out.println("press enter and you will be reprompted.");
-        System.out.println("type \"12/12/12\" and itll be correct.");
-        String toCheck = testLogInput.inputDate();
+        System.out.println("type \"12/12/12\" and it'll be correct.");
+        //String toCheck = testLogInput.inputDate();
 
-        boolean result = (expected.equals(toCheck));
-        assertTrue(result, "should be true (if you enter 121212)");
+        //boolean result = (expected.equals(toCheck));
+        //assertTrue(result, "should be true (if you enter 121212)");
+
+        //This test requires input from the user to validate it. Hence it cannot be ran automatically
     }
 
     @Test
