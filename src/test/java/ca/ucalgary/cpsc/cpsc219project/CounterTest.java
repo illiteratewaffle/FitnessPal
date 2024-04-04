@@ -7,9 +7,10 @@ class CounterTest {
 @Test
     void countDates() {
         Counter counter = new Counter(5);
+        ArrayList<WorkoutLog> workoutLogs = counter.getInformation();
 
         int expected = 5;
-        int actual = counter.countDates(counter.getInformation());
+        int actual = counter.countDates(workoutLogs);
 
         assertEquals(expected, actual, "There should be 5 days in the file");
     }
