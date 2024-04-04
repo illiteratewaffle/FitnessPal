@@ -94,19 +94,19 @@ public class FitnessPalLogsController {
         boolean okayToLog = true;
 
         if (!validDate) {
-            errorLabel.setText("Invalid input. Input must be a valid day in the form yy/mm/dd.");
+            errorLabel.setText("ERROR: Invalid input. Input must be a valid day in the form yy/mm/dd.");
             okayToLog = false;
         }
         if (!validExercise) {
-            errorLabel.setText("Invalid Input. Please enter an exercise name!");
+            errorLabel.setText("ERROR: Invalid input. Please enter an exercise name!");
             okayToLog = false;
         }
         if (!validSets) {
-            errorLabel.setText("Invalid input. Sets must be a non-negative integer!");
+            errorLabel.setText("ERROR: Invalid input. Sets must be a non-negative integer!");
             okayToLog = false;
         }
         if (!validReps) {
-            errorLabel.setText("Invalid input. Input must be a non-negative integer.");
+            errorLabel.setText("ERROR: Invalid input.Reps must be a non-negative integer!");
             okayToLog = false;
         }
 
