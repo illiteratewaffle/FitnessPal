@@ -41,12 +41,13 @@ class CounterTest {
 
     @Test
     void countReps() {
+        Counter counter = new Counter(5); // Create a Counter instance
+        ArrayList<WorkoutLog> workoutLogs = counter.getInformation();
+
         int expected = 93;
+        int actual = counter.countReps(workoutLogs);
 
-        int toCheck = Counter.countReps(Counter.getInformation());
-
-        boolean result = (toCheck == expected);
-        assertTrue(result, "There should be 93 reps in the file");
+        assertEquals(expected, actual, "There should be 93 reps in the file. Test should have passed");
 
     }
 }
