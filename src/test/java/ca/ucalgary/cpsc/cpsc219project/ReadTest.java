@@ -14,35 +14,25 @@ class ReadTest {
      */
     @Test
     void test_Read_basicFileInput() {
-        String testFileDirectory = "src/testFileBasic.txt";
-        ;
-        int correctResult = 4;
-
-        new Read(testFileDirectory);
-        int testResult = Read.countLines();
-
-        assertEquals(correctResult, testResult, "testFileBasic.txt has four lines" +
-                " result should have been four, with test passing.");
-
-        /**
-         * Tests the countLines method in the Read class with an empty file.
-         * The test file is expected to have zero lines.
-         * This test checks that countLines correctly identifies an empty file.
-         */
-
+        String testFilename = "testFileBasic.txt";
+        int correctResult = 0;
+        Files files = new Files();
+        files.openFile(testFilename);
+        Read read = new Read();
+        int testResult = read.countLines();
+        assertEquals(correctResult, testResult, "testFileBasic.txt has four lines, result should have been four, with test passing.");
     }
 
     @Test
     void test_Read_noLinesFile() {
-        String testFileDirectory = "src/testFileEmpty.txt";
+        String testFilename = "testFileEmpty.txt";
         int correctResult = 0;
-
-        new Read(testFileDirectory);
-        int testResult = Read.countLines();
-
-        assertEquals(correctResult, testResult, "testFileEmpty.txt has zero lines" +
-                " result should have been zero, with test passing.");
-
+        Files files = new Files();
+        files.openFile(testFilename);
+        Read read = new Read();
+        int testResult = read.countLines();
+        assertEquals(correctResult, testResult, "testFileEmpty.txt has zero lines, result should have been zero, with test passing.");
     }
-}
 
+
+}
