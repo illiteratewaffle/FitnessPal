@@ -14,6 +14,7 @@ import java.io.IOException;
 
 public class FitnessPalLogsController {
 
+    //Controller for setting stage and GUI
 
     private Stage stage;
     @FXML
