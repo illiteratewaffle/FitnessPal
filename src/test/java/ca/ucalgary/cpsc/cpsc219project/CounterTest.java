@@ -3,15 +3,14 @@ package ca.ucalgary.cpsc.cpsc219project;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class CounterTest {
-    @Test
+@Test
     void countDates() {
+        Counter counter = new Counter(5);
+
         int expected = 5;
+        int actual = counter.countDates(counter.getInformation());
 
-        int toCheck = Counter.countDates(Counter.getInformation());
-
-        boolean result = (toCheck == expected);
-        assertTrue(result, "There should be 5 days in the file");
+        assertEquals(expected, actual, "There should be 5 days in the file");
     }
 
     @Test
