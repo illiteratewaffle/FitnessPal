@@ -60,7 +60,7 @@ public class FitnessPalSortedController {
     public void calculateLogs() {
         Read reader = new Read();
         Counter counter = new Counter(reader.getLines());
-        ArrayList<String> calculationMessages = counter.displayCount();
+        ArrayList<String> calculationMessages = counter.countStats();
         totalDays.setText(calculationMessages.get(0));
         totalExercises.setText(calculationMessages.get(1));
         totalSets.setText(calculationMessages.get(2));

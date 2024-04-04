@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.application.Application;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -16,6 +17,8 @@ import java.io.IOException;
 public class FitnessPalMenuController {
 
     private Stage stage;
+    @FXML
+    private Label helpMessage;
 
     /**
      * When you press "Add Workout"
@@ -61,6 +64,11 @@ public class FitnessPalMenuController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @FXML
+    protected void onHelpClick() {
+        helpMessage.setText("This is a program that helps you track your workout progress. ");
     }
 
 }

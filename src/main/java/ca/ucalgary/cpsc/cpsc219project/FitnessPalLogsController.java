@@ -115,7 +115,8 @@ public class FitnessPalLogsController {
             int intReps = Integer.parseInt(Reps);
 
             WorkoutLog workoutLog = new WorkoutLog(Date, Exercise, intSets, intReps);
-            Write.writeFile(workoutLog.toWriteFile());
+            Write writer = new Write();
+            writer.writeFile(workoutLog.toWriteFile());
         }
     }
 

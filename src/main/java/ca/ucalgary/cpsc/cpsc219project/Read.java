@@ -4,7 +4,6 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.Scanner;
 
 /**Lets user see their workouts. Outputs in Main class
  *
@@ -16,7 +15,9 @@ public class Read extends Files {
 
     private int lines;
 
+    private String username;
     private static String testFileDirectory;
+    private Files files = new Files();
 
 
     /**
@@ -24,11 +25,16 @@ public class Read extends Files {
      * Read constructors
      */
     public Read(String sortBy) {
+
         this.choice = sortBy;
         this.lines = countLines();
+        this.username = FitnessPalLoginController.getUsername();
+
     }
     public Read() {
+
         this.lines = countLines();
+        this.username = FitnessPalLoginController.getUsername();
     }
 
     /**
@@ -39,8 +45,10 @@ public class Read extends Files {
      */
     public int countLines(){
         int lines = 0;
+        this.username = FitnessPalLoginController.getUsername();
         try {
-            File file = openFile();
+
+            File file = files.openFile(username);
 
             if (testFileDirectory != null ){
                 file = new File(testFileDirectory);
@@ -77,7 +85,7 @@ public class Read extends Files {
         ArrayList<String> logsList = new ArrayList<>();
 
         try {
-            File file = openFile();
+            File file = files.openFile(username);
             FileReader file_reader = new FileReader(file);
             BufferedReader buffered_reader = new BufferedReader(file_reader);
 
@@ -199,7 +207,8 @@ public class Read extends Files {
         return choice;
     }
 
-    protected int getLines() {
+    public int getLines() {
+        System.out.println("debug: number of lines in file:" + lines);
         return lines;
     }
 }

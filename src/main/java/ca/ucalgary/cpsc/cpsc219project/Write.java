@@ -2,19 +2,22 @@ package ca.ucalgary.cpsc.cpsc219project;
 
 import java.io.*;
 
-// Abstract class: to not allow object type Write to be created
-public abstract class Write extends Files {
+public class Write extends Files {
+
+    protected String username;
 
     /**Writes workout in file.
-     * This is an action corresponding to workout.txt, does not need a Write object because there's only 1 file.
      * Includes error/exception handling.
      * This starts writing content at the end instead of the start. Appends instead of overrides.
      *
      * @param log is the workout information to be written to file.
      */
-    public static void writeFile(String log) {
+    public void writeFile(String log) {
+        Files files = new Files();
+        this.username = FitnessPalLoginController.getUsername();
+
         try {
-            File file = openFile();
+            File file = files.openFile(username); // does not include .txt extension
             FileWriter file_writer = new FileWriter(file, true);
             BufferedWriter buffered_writer = new BufferedWriter(file_writer);
 
