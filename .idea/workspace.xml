@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Adding to counter tests" />
+    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Add help button/message in main menu">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-04__11_34a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-04__11_34a_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Files.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/workouts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/workouts.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,12 +37,22 @@
     }
   }
 }</component>
-  <component name="GitLabMergeRequestsSettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;first&quot;: &quot;https://csgit.ucalgary.ca/harry.hu1/project.git&quot;,
-    &quot;second&quot;: &quot;45371805-ca6c-4868-9bd5-31c870e9b841&quot;
+  <component name="GitLabMergeRequestsSettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "first": "https://csgit.ucalgary.ca/harry.hu1/project.git",
+    "second": "d8546f30-4e5a-4f35-8201-72d27597eb83"
   }
-}</component>
+}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -54,7 +70,6 @@
     "Application.FitnessPalApplication.executor": "Run",
     "Application.FitnessPalMenuController.executor": "Run",
     "Application.Main.executor": "Run",
-    "JUnit.CounterTest.countDates.executor": "Run",
     "JUnit.CounterTest.executor": "Run",
     "JUnit.FilesTest.executor": "Run",
     "JUnit.ReadTest.executor": "Run",
@@ -64,7 +79,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/babyh/IdeaProjects/project/src/main/resources/ca/ucalgary/cpsc/cpsc219project",
+    "last_opened_file_path": "D:/Downloads",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,33 +99,11 @@
       <recent name="D:\University of Calgary\Winter 2024\Cpsc 219\projects\cpsc219project\src\main\java\ca\ucalgary\cpsc\cpsc219project" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="CounterTest.countDates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cpsc219project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.ucalgary.cpsc.cpsc219project.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.ucalgary.cpsc.cpsc219project" />
-      <option name="MAIN_CLASS_NAME" value="ca.ucalgary.cpsc.cpsc219project.CounterTest" />
-      <option name="METHOD_NAME" value="countDates" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.CounterTest.countDates" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
       </set>
     </attachedChunks>
   </component>
@@ -267,31 +260,7 @@
       <option name="project" value="LOCAL" />
       <updated>1712197794463</updated>
     </task>
-    <task id="LOCAL-00018" summary="More descriptive output for error msges">
-      <option name="closed" value="true" />
-      <created>1712208892998</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1712208892999</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Fixing issue with counter tests.">
-      <option name="closed" value="true" />
-      <created>1712253168984</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1712253168984</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Adding to counter tests">
-      <option name="closed" value="true" />
-      <created>1712253445471</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1712253445471</updated>
-    </task>
-    <option name="localTasksCounter" value="21" />
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,9 +296,6 @@
     <MESSAGE value="Create display for workout calculations" />
     <MESSAGE value="Delete redundant classes and code" />
     <MESSAGE value="Add help button/message in main menu" />
-    <MESSAGE value="More descriptive output for error msges" />
-    <MESSAGE value="Fixing issue with counter tests." />
-    <MESSAGE value="Adding to counter tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding to counter tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add help button/message in main menu" />
   </component>
 </project>

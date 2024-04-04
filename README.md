@@ -1,6 +1,6 @@
 Program Instructions:
 
-Make sure you have workouts.txt in your src directory."src/workouts.txt"
+User enters username. Their workout logs will correspond to their usernames.
 
 Gets user input. User will enter their date, exercise, sets, reps. Includes error checking. Will reprompt for input if initial input is invalid. Adds date, exercise, sets, reps into an array
 

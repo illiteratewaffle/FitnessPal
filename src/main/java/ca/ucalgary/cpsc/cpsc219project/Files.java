@@ -9,7 +9,6 @@ import java.io.IOException;
 public class Files {
 
     protected String path;
-    protected String username = FitnessPalLoginController.getUsername();
 
     public Files() {
         this.path = null;
