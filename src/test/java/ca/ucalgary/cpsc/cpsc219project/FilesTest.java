@@ -16,7 +16,7 @@ class FilesTest {
         File expected = new File("src/" + testUsername + ".txt");
         //calls openFile with test username and stores result
         File actual = files.openFile(testUsername);
-
+        //compares absolute path of the expected and actual files
         assertEquals(expected.getAbsolutePath(), actual.getAbsolutePath(), "The opened file path should match the expected.");
     }
 }
