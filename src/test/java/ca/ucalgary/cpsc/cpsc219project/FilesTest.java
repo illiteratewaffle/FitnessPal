@@ -9,10 +9,12 @@ class FilesTest {
 
     @Test
     void testOpenFile_correctFile() {
-        File expected = new File("src/workouts.txt");
+        Files files = new Files();
+        String testUsername = "workouts"; // Assuming 'workouts' is the username
+        File expected = new File("src/" + testUsername + ".txt");
 
-        File toCheck = Files.openFile();
+        File actual = files.openFile(testUsername);
 
-        assertEquals(toCheck, expected, "Expected: toCheck == expected");
+        assertEquals(expected.getAbsolutePath(), actual.getAbsolutePath(), "The opened file path should match the expected.");
     }
 }
