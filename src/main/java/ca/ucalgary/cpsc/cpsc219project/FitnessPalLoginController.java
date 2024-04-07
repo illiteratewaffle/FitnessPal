@@ -25,6 +25,7 @@ public class FitnessPalLoginController{
 
             if (usernameText.getText() != null) {
                 username = usernameText.getText();
+                System.out.println("username: " + username); //debugging purposes
             }
 
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FitnessPalMenu.fxml"));
@@ -43,6 +44,10 @@ public class FitnessPalLoginController{
 
     public static String getUsername() {
         return username;
+    }
+
+    public static void logoutUsername() {
+        FitnessPalLoginController.username = null;
     }
 
 }
