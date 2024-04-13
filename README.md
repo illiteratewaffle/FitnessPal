@@ -20,9 +20,11 @@ This function outputs the workouts in the file in chronological order. Opens fil
 - By Exercise (alphabetical order)
 This function outputs the workouts in the file in alphabetical order in terms of exercise name. (apparently sorting by alphabetical order by the second word in a string is way harder than sorting by its first word) Must make a HashMap (keys: date, values: exercises), Then make an ArrayList with exercise, Then alphabetically sort the ArrayList, Then with the sorted ArrayList, map each value to it's key.
 
-Has the option to continue running the loop.
+NOTE: The author "BuildTools" is Harry Hu
+
 New things since Demo 1:
 
+Has the option to continue running the loop.
 Counter, stats on your workouts,
 More tests
 Made only valid date entry
@@ -38,3 +40,6 @@ GUI interface
 Login page added to the GUI
  - Multiple files set up, one for each user
 More specific documentation
+
+Changes since Demo 3 (FOR FINAL SUBMISSION):
+- Added option to logout of program, and log back in (essentially changing which file you are writing to while still in the application)
