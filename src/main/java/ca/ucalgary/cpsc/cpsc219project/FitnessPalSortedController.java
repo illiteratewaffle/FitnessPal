@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -47,14 +48,46 @@ public class FitnessPalSortedController {
     public void loadLogs(String sortBy) {
         Read reader = new Read(sortBy);
         ArrayList<String> logsList = reader.sort(reader.getChoice());
-        VBox vbox = new VBox();
 
-        for (int i = 0; i < logsList.size(); i++) {
-            Label label = new Label();
-            label.setText(logsList.get(i));
-            vbox.getChildren().add(label);
+        GridPane gridPane = new GridPane();
+        makeLegend(gridPane);
+
+        for (int numberOfWorkouts = 0; numberOfWorkouts < logsList.size(); numberOfWorkouts++) {
+            String[] seperatedLogs = logsList.get(numberOfWorkouts).split(",");
+
+            for (int i = 0; i < 4; i++) {
+                Label label = new Label();
+                label.setText(seperatedLogs[i] + "      ");
+                gridPane.add(label, i, numberOfWorkouts + 2);
+            }
         }
-        workouts.setContent(vbox);
+        workouts.setContent(gridPane);
+    }
+
+    private void makeLegend(GridPane gridPane) {
+
+        Label date = new Label();
+        date.setText("DATE      ");
+        gridPane.add(date, 0, 0);
+
+        Label exercise = new Label();
+        exercise.setText("EXERCISE      ");
+        gridPane.add(exercise, 1, 0);
+
+        Label sets = new Label();
+        sets.setText("SETS      ");
+        gridPane.add(sets, 2, 0);
+
+        Label reps = new Label();
+        reps.setText("REPS      ");
+        gridPane.add(reps, 3, 0);
+
+        for (int i = 0; i < 4; i++) {
+            Label literallyNothing = new Label();
+            literallyNothing.setText("  ");
+            gridPane.add(literallyNothing, i, 1);
+        }
+
     }
 
     public void calculateLogs() {

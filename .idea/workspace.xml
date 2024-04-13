@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Add option to log out as user.">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-04,_11_34 a_m__[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-04__11_34a_m___Changes_.xml" beforeDir="false" />
+    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Make back button work on FitnessPalView.fxml , FitnessPalViewController.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalSortedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalSortedController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +121,7 @@
       <workItem from="1712196869582" duration="9710000" />
       <workItem from="1712463103237" duration="3581000" />
       <workItem from="1712543643563" duration="4000" />
-      <workItem from="1712974690320" duration="726000" />
+      <workItem from="1712974690320" duration="2697000" />
     </task>
     <task id="LOCAL-00001" summary="Start Demo 3">
       <option name="closed" value="true" />
@@ -269,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712464111073</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Make back button work on FitnessPalView.fxml , FitnessPalViewController.java">
+      <option name="closed" value="true" />
+      <created>1712976189202</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1712976189202</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +312,7 @@
     <MESSAGE value="Delete redundant classes and code" />
     <MESSAGE value="Add help button/message in main menu" />
     <MESSAGE value="Add option to log out as user." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add option to log out as user." />
+    <MESSAGE value="Make back button work on FitnessPalView.fxml , FitnessPalViewController.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make back button work on FitnessPalView.fxml , FitnessPalViewController.java" />
   </component>
 </project>
