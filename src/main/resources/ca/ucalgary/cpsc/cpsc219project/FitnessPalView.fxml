@@ -34,6 +34,20 @@
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin></Button>
                </children></HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="See Specific Exercises">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onReturnClick" prefHeight="25.0" prefWidth="130.0" text="Return To Menu">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
          </children></VBox>
    </children>
 </AnchorPane>

@@ -93,4 +93,27 @@ public class FitnessPalViewController {
         }
     }
 
+    /**
+     * When you press "Return to Menu"
+     *
+     * @param event
+     */
+    @FXML
+    protected void onReturnClick(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("FitnessPalMenu.fxml"));
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+            Scene scene = new Scene(root, 480, 240);
+
+            stage.setTitle("FitnessPal");
+            stage.setScene(scene);
+
+            stage.show();
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 }
