@@ -45,3 +45,4 @@ Changes since Demo 3 (FOR FINAL SUBMISSION):
 - Added option to logout of program, and log back in (essentially changing which file you are writing to while still in the application)
 - Added cleaner UI when displaying workouts. Each of "DATE", "EXERCISE", "SETS" and "REPS" are centered in their own column (suggestion by TA)
 - Added ability to filter for speecific exercies when viewing workout log (mentioned by TA)
+- Added more specific documentation + information in readme file
