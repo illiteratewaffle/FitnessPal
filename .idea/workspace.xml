@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Add help button/message in main menu">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Harry.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Harry.txt" afterDir="false" />
+    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="Documentation in FitnessPalApplication and README">
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Counter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalSortedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalSortedController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/FitnessPalViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/LogInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/LogInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Read.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/cpsc/cpsc219project/FitnessPalView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Write.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/cpsc/cpsc219project/Write.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/ucalgary/cpsc/cpsc219project/CounterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/ucalgary/cpsc/cpsc219project/CounterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/ucalgary/cpsc/cpsc219project/FilesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/ucalgary/cpsc/cpsc219project/FilesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/ucalgary/cpsc/cpsc219project/LogInputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/ucalgary/cpsc/cpsc219project/LogInputTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/ucalgary/cpsc/cpsc219project/ReadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/ucalgary/cpsc/cpsc219project/ReadTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +48,6 @@
 }</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -264,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712197794463</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Documentation in FitnessPalApplication and README">
+      <option name="closed" value="true" />
+      <created>1713127466727</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1713127466727</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +300,7 @@
     <MESSAGE value="Create display for workout calculations" />
     <MESSAGE value="Delete redundant classes and code" />
     <MESSAGE value="Add help button/message in main menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add help button/message in main menu" />
+    <MESSAGE value="Documentation in FitnessPalApplication and README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Documentation in FitnessPalApplication and README" />
   </component>
 </project>

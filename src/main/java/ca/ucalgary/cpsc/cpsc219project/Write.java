@@ -6,7 +6,7 @@ public class Write extends Files {
 
     protected String username;
 
-    /**Writes workout in file.
+    /** Writes workout in file.
      * Includes error/exception handling.
      * This starts writing content at the end instead of the start. Appends instead of overrides.
      *

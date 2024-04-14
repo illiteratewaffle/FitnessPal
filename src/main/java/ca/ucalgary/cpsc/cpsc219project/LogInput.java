@@ -12,7 +12,7 @@ public class LogInput {
 
 
     /**Constructor for Input
-     *Initializes varibale with default values
+     *Initializes variable with default values
      */
     public LogInput() {
         this.date = null;

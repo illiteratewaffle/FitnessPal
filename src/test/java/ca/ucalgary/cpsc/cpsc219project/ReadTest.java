@@ -6,8 +6,9 @@ import java.io.File;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+//Test cases for Read class
+
 class ReadTest {
-    //Ensure that "countLines" works properly  
     @Test
     void test_Read_basicFileInput() {
         String testFilename = "testFileBasic.txt";
