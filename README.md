@@ -8,10 +8,6 @@ Gets workout date. Checks if the date is legitimate. Entering "24/02/35" (Feb. 3
 
 The logged workout (ie. 01/01/01,"BENCH PRESS",3,12) is stored as an object of class WorkoutLog.
 
-File must be in src/workouts.txt
-
-Note: File could be created using .createNewFile() but not using that because we don't trust it. This starts writing content at the end instead of the start. Appends instead of overrides. Includes error/exception handling.
-
 User has the option to choose how the file is read.
 - By Recently Added,
 The text in the file is sorted by recently added by default. This reads the file and outputs exactly what the file says. Outputs into the terminal, does not modify file.
@@ -19,8 +15,29 @@ The text in the file is sorted by recently added by default. This reads the file
 This function outputs the workouts in the file in chronological order. Opens file, puts all the lines from that file into an ArrayList Sorts the ArrayList using java.util.Collections Prints the file in chronological order.
 - By Exercise (alphabetical order)
 This function outputs the workouts in the file in alphabetical order in terms of exercise name. (apparently sorting by alphabetical order by the second word in a string is way harder than sorting by its first word) Must make a HashMap (keys: date, values: exercises), Then make an ArrayList with exercise, Then alphabetically sort the ArrayList, Then with the sorted ArrayList, map each value to it's key.
+- Search by specific exercise. If you search "bench", the program will only display "bench" exercises.
 
-NOTE: The author "BuildTools" is Harry Hu
+NOTE: The author "BuildTools" in GitLab is Harry Hu
+
+
+Testing outside of JUnit:
+Testing the GUI using JUnit can be weird so many things are manually tested.
+- Logging in:
+    - Logging in as one user;
+    - Logging out then logging in again as another user;
+    - Leaving username TextField blank (creates "null.txt" and we've used that as a community file.)
+- Main Menu:
+    - Add Workout button works;
+    - View Workouts button works;
+    - Logging out works;
+    - Help button displays message (works);
+- Sorting:
+    - Recently Added, Alphabetical, Date sorting works and outputs correct results;
+    - Sort by specific exercise TextField works
+        - If you enter nothing, it will output everything.
+        - not gonna lie, this was kind of a last minute feature so its pretty janky. it does not calculate the statistics for exercises.
+- And all the back buttons work.
+
 
 New things since Demo 1:
 
@@ -43,3 +60,4 @@ More specific documentation
 
 Changes since Demo 3 (FOR FINAL SUBMISSION):
 - Added option to logout of program, and log back in (essentially changing which file you are writing to while still in the application)
+- Added option to search for specific exercises in sorting menu.
