@@ -41,12 +41,31 @@ public class FitnessPalSortedController {
     }
 
     /**
-     * Loads sorted logs into ScrollPane
+     * Loads sorted logs into ScrollPane.
+     * One method for the 3 regular sort, other for seeing specific exercises.
      *
      * @param sortBy
      */
     public void loadLogs(String sortBy) {
         Read reader = new Read(sortBy);
+        ArrayList<String> logsList = reader.sort(reader.getChoice());
+
+        GridPane gridPane = new GridPane();
+        makeLegend(gridPane);
+
+        for (int numberOfWorkouts = 0; numberOfWorkouts < logsList.size(); numberOfWorkouts++) {
+            String[] seperatedLogs = logsList.get(numberOfWorkouts).split(",");
+
+            for (int i = 0; i < 4; i++) {
+                Label label = new Label();
+                label.setText(seperatedLogs[i] + "      ");
+                gridPane.add(label, i, numberOfWorkouts + 2);
+            }
+        }
+        workouts.setContent(gridPane);
+    }
+    public void loadLogs(String sortBy, String specific) {
+        Read reader = new Read(sortBy, specific);
         ArrayList<String> logsList = reader.sort(reader.getChoice());
 
         GridPane gridPane = new GridPane();
@@ -90,6 +109,9 @@ public class FitnessPalSortedController {
 
     }
 
+    /**
+     * Calculating how many days/exercises/reps/sets user has done.
+     */
     public void calculateLogs() {
         Read reader = new Read();
         Counter counter = new Counter(reader.getLines());

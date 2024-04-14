@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -36,11 +37,16 @@
                </children></HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="See Specific Exercises">
+                  <TextField fx:id="specificExercise" promptText="Type in an exercise name" />
+                  <Button mnemonicParsing="false" onAction="#onSpecificExerciseClick" prefHeight="25.0" prefWidth="130.0" text="See Specific Exercise">
                      <HBox.margin>
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
                   </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
                   <Button mnemonicParsing="false" onAction="#onReturnClick" prefHeight="25.0" prefWidth="130.0" text="Return To Menu">
                      <HBox.margin>
                         <Insets left="20.0" right="20.0" />

@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -13,7 +14,8 @@ import java.io.IOException;
 public class FitnessPalViewController {
 
     private Stage stage;
-
+    @FXML
+    private TextField specificExercise;
     private String sortBy;
 
     @FXML
@@ -88,6 +90,33 @@ public class FitnessPalViewController {
 
             stage.show();
 
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @FXML
+    protected void onSpecificExerciseClick(ActionEvent event) {
+        String seeSpecificExercise;
+        sortBy = "SPECIFIC";
+
+        seeSpecificExercise = specificExercise.getText().toUpperCase();
+
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FitnessPalSorted.fxml"));
+            Parent root = fxmlLoader.load();
+            FitnessPalSortedController sortedController = fxmlLoader.getController();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root, 600, 400);
+
+            sortedController.loadTitle(sortBy);
+            sortedController.loadLogs(sortBy, seeSpecificExercise);
+            sortedController.calculateLogs();
+
+            stage.setTitle("Sorting by Date");
+            stage.setScene(scene);
+
+            stage.show();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

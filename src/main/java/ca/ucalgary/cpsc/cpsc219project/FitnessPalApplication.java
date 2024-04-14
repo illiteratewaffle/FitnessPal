@@ -25,3 +25,4 @@ public class FitnessPalApplication extends Application {
         stage.show();
     }
 }
+ 

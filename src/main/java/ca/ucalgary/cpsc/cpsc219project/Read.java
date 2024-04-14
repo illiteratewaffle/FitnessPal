@@ -12,7 +12,7 @@ public class Read extends Files {
 
     // class variables
     private String choice;
-
+    private String specificExerciseChoice;
     private int lines;
 
     private String username;
@@ -27,6 +27,14 @@ public class Read extends Files {
     public Read(String sortBy) {
 
         this.choice = sortBy;
+        this.lines = countLines();
+        this.username = FitnessPalLoginController.getUsername();
+
+    }
+    public Read(String sortBy, String specific) {
+
+        this.choice = sortBy;
+        this.specificExerciseChoice = specific;
         this.lines = countLines();
         this.username = FitnessPalLoginController.getUsername();
 
@@ -100,6 +108,9 @@ public class Read extends Files {
                     break;
                 case "DATE":
                     logsList = sortByDate(buffered_reader);
+                    break;
+                case "SPECIFIC":
+                    logsList = seeSpecificExercise(buffered_reader, specificExerciseChoice);
                     break;
             }
 
@@ -203,6 +214,21 @@ public class Read extends Files {
         return logsList;
     }
 
+    private ArrayList<String> seeSpecificExercise(BufferedReader buffered_reader, String specific) throws IOException {
+        ArrayList<String> logsList = new ArrayList<>();
+
+        String aLine;
+        while((aLine = buffered_reader.readLine()) != null){
+            if (aLine.contains(specific)) {
+                logsList.add(aLine);
+            }
+        }
+
+        Collections.sort(logsList);
+
+        return logsList;
+    }
+
     public String getChoice() {
         return choice;
     }
@@ -211,4 +237,5 @@ public class Read extends Files {
         System.out.println("debug: number of lines in file:" + lines);
         return lines;
     }
+
 }

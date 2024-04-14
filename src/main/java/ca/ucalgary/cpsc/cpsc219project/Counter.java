@@ -11,10 +11,10 @@ import java.util.HashSet;
 
 public class Counter extends Files {
     private final int LINES;
-    private int countDates; //unique dates only
-    private int countExercises;
-    private int countSets;
-    private int countReps;
+    private int countedDates; //unique dates only
+    private int countedExercises;
+    private int countedSets;
+    private int countedReps;
     private String username;
     private Files files = new Files();
      
@@ -26,10 +26,10 @@ public class Counter extends Files {
 
         ArrayList<WorkoutLog> workouts = getInformation();
 
-        this.countDates = countDates(workouts);
-        this.countExercises = countExercises(workouts);
-        this.countSets = countSets(workouts);
-        this.countReps = countReps(workouts);
+        this.countedDates = countDates(workouts);
+        this.countedExercises = countExercises(workouts);
+        this.countedSets = countSets(workouts);
+        this.countedReps = countReps(workouts);
 
     }
 
@@ -45,10 +45,10 @@ public class Counter extends Files {
         ArrayList<String> calculationMessages = new ArrayList<>();
 
          // Preparing messages to display the counted statistics
-        String daysMessage = "Total Days of Exercising: " + countDates;
-        String exercisesMessage = "Total Exercises Done: " + countExercises;
-        String setsMessage = "Total Sets Done: " + countSets;
-        String repsMessage = "Total Reps Done: " + countReps;
+        String daysMessage = "Total Days of Exercising: " + countedDates;
+        String exercisesMessage = "Total Exercises Done: " + countedExercises;
+        String setsMessage = "Total Sets Done: " + countedSets;
+        String repsMessage = "Total Reps Done: " + countedReps;
 
         calculationMessages.add(daysMessage);
         calculationMessages.add(exercisesMessage);
