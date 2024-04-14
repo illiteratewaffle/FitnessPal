@@ -1,3 +1,6 @@
+**Progam Name: FitnessPal - Workout Log Tracker**
+**Authors: Harry Hu, Muhammad Hasham, Armaan Singh**
+
 Program Instructions:
 
 User enters username. Their workout logs will correspond to their usernames.
