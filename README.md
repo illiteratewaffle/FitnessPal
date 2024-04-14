@@ -31,6 +31,12 @@ Testing the GUI using JUnit can be weird so many things are manually tested.
     - View Workouts button works;
     - Logging out works;
     - Help button displays message (works);
+- Adding a workout:
+    - Date TextField only accepts valid dates in the form of yy/mm/dd
+    - Exercise TextField accepts anything
+    - Number of Sets TextField accepts non-negative integers
+    - Number of Reps TextField accepts non-negative integers
+    - In the event of invalid input, an error label with helpful messages will appear.
 - Sorting:
     - Recently Added, Alphabetical, Date sorting works and outputs correct results;
     - Sort by specific exercise TextField works
