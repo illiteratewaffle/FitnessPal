@@ -3,11 +3,10 @@
 
 Program Description
 
-FitnessPal is a workout tracker thats allows users to log and track their workouts efficiently. Each user is able
-to create and manage their own workout log. They can write any workouts including custom one custom workouts and organize by them in different 
-ways in terms of practicality/personal choice
-
-
+FitnessPal is a dynamic workout tracker thats allows users to log and track their workouts efficiently. Each user is able
+to create and manage their own workout log. They can write any workouts including custom workouts so there is no
+limits to what the user can track which provides versatility. These workouts can then be organzied in different ways in 
+terms of practicality/personal choice so that the program has better readability and tracking for the user.
 
 
 Program Instructions:
