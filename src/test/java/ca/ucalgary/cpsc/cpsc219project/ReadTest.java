@@ -6,7 +6,12 @@ import java.io.File;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-//Test cases for Read class
+
+/**
+ * These are test classes for testing the Read class functionality, specifically the ability to count the number
+ * of lines in a file. These tests check that the Read class correctly interprets the content of files,
+ * both when they are empty and when they contain lines of text.
+ */
 
 class ReadTest {
     @Test
