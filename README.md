@@ -37,6 +37,8 @@ Testing the GUI using JUnit can be weird so many things are manually tested.
     - Logging in as one user;
     - Logging out then logging in again as another user;
     - Leaving username TextField blank (creates "null.txt" and we've used that as a community file.)
+    - Usernames that were used for testing were "armaan", "Harry", "workouts"
+        - "workouts" was the main file used for testing as it contained the most logs.
 - Main Menu:
     - Add Workout button works;
     - View Workouts button works;
