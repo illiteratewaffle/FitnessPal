@@ -29,21 +29,6 @@ public class WorkoutLog {
         return (DATE + ",\"" + EXERCISE + "\"," + SETS + "," + REPS + ",\n");
     }
 
-    /**Repeats back what the user has entered.
-     *
-     */
-    public void display() {
-        String dateMessage = "Date: " + this.DATE;
-        String exerciseMessage = "Exercise: " + this.EXERCISE;
-        String setsMessage = "Sets: " + this.SETS;
-        String repsMessage = "Reps: " + this.REPS;
-
-        System.out.println(dateMessage);
-        System.out.println(exerciseMessage);
-        System.out.println(setsMessage);
-        System.out.println(repsMessage);
-    }
-
     public String getDATE() {
         return DATE;
     }

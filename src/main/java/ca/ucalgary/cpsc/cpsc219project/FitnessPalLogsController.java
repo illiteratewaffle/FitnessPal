@@ -54,10 +54,10 @@ public class FitnessPalLogsController {
     /**
      * When you click "Add Workout"
      *
-     * @param event
+     * @param
      */
     @FXML
-    protected void onAddClick(ActionEvent event) {
+    protected void onAddClick() {
         try {
             errorLabel.setText("");
 
