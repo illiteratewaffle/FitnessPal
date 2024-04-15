@@ -2,6 +2,8 @@ package ca.ucalgary.cpsc.cpsc219project;
 
 
 // Renamed from "Input" to "LogInput" to make inputs for Menu Options and Workout Logs distinct.
+// The LogInput class is designed to handle input for workout logs, 
+// including date, exercise name, sets, and reps.
 public class LogInput {
     //Works to store workout info and year etc
     private String date;
@@ -52,7 +54,7 @@ public class LogInput {
                 break;
             }
         }
-        //Validates year, month and day
+        //Validates year, month and day if format is correct
         if (validFormat) {
             String inputYear = String.valueOf(inputDate.charAt(0)) + String.valueOf(inputDate.charAt(1));
             int valueYear = Integer.valueOf(inputYear);
