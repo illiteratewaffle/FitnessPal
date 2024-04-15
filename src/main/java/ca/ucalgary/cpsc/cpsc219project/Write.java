@@ -29,9 +29,11 @@ public class Write extends Files {
 
             buffered_writer.flush();
         } catch (FileNotFoundException e){
+            // Exception handling for thecases that the file path is incorrect or file is inaccessible.
             System.out.println("File invalid.");
             System.exit(1);
         } catch (IOException e) {
+            // Thhis handles general I/O errors like write failures.
             System.out.println("File invalid.");
             throw new RuntimeException(e);
         }
