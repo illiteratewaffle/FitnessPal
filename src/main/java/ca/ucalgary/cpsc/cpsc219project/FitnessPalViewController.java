@@ -113,7 +113,7 @@ public class FitnessPalViewController {
             sortedController.loadLogs(sortBy, seeSpecificExercise);
             sortedController.calculateLogs();
 
-            stage.setTitle("Sorting by Date");
+            stage.setTitle("Exercise: \"" + specificExercise.getText() + "\"");
             stage.setScene(scene);
 
             stage.show();
