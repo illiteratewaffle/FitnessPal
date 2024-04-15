@@ -1,7 +1,11 @@
+package ca.ucalgary.cpsc.cpsc219project;
+
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.IOException;
+
+//Test cases for Write class
 
 public class WriteTest {
     //verifies if the file creation process works as expected

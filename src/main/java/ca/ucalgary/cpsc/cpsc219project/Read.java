@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
-/**Lets user see their workouts. Outputs in Main class
+/**  user see their workouts. Outputs in Main class
  *
  */
 public class Read extends Files {

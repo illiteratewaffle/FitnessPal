@@ -15,7 +15,7 @@ public class Counter extends Files {
     private int countedExercises;
     private int countedSets;
     private int countedReps;
-    private String username;
+    private String username; //Used to access different files
     private Files files = new Files();
      
     public Counter(int lines){
@@ -34,7 +34,6 @@ public class Counter extends Files {
     }
 
     /**
-     * Self explanatory
      * Counts how many days you've exercised in total (does not count duplicate dates)
      * Counts how many exercises you've done in total
      * Counts how many sets you've done in total
