@@ -31,4 +31,9 @@ class WorkoutLogTest {
 
     }
 
+    @Test
+    vois test_workoutLog_output
+    String testDate = "12/12/2024";
+    String testExercise = "Pushups";
+    int testSets = 3;
 }
