@@ -1,5 +1,12 @@
 **Progam Name: FitnessPal - Workout Log Tracker**
-**Authors: Harry Hu, Muhammad Hasham, Armaan Singh**
+**Developers : Harry Hu, Muhammad Hasham, Armaan Singh**
+
+Program Description
+FitnessPal is a workout tracker thats allows users to log and track their workouts efficiently. Each user is able
+to create and manage their own workout log. They can choose custom workouts and organize by any means they want in order
+
+
+
 
 Program Instructions:
 
