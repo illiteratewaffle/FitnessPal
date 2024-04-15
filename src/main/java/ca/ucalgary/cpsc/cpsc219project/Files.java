@@ -7,7 +7,7 @@ import java.io.IOException;
  * Redundant class but want to show that we understand how inheritance and visibility modifiers work.
  * This class provides basic file handling operations.It works to demonstrate
  * understanding of inheritance and visibility modifiers in a simple file management context.
- **/
+ */
 public class Files {
 
     protected String path;

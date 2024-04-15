@@ -14,6 +14,10 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 
 class ReadTest {
+    /**
+     * This works to test the basic functionality of counting lines in a file that is expected to have a certain number
+     * of lines. This test checks if the Read class accurately counts lines.
+     */
     @Test
     void test_Read_basicFileInput() {
         String testFilename = "testFileBasic.txt";
@@ -24,7 +28,10 @@ class ReadTest {
         int testResult = read.countLines();
         assertEquals(correctResult, testResult, "testFileBasic.txt has four lines, result should have been four, with test passing.");
     }
-
+    /**
+     * This works to test the Read class's ability to handle an empty file correctly by ensuring it counts zero lines
+     * as expected. This is important for validating how the system behaves with minimal input.
+     */
     @Test
     void test_Read_noLinesFile() {
         String testFilename = "testFileEmpty.txt";
