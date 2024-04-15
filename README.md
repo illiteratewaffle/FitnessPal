@@ -8,8 +8,13 @@ to create and manage their own workout log. They can write any workouts includin
 limits to what the user can track which provides versatility. These workouts can then be organzied in different ways in 
 terms of practicality/personal choice so that the program has better readability and tracking for the user.
 
+How to run the program:
 
-Program Instructions:
+The easiest way to run the program is to clone/download our git repository and run "FitnessPalApplication.java"
+If you want to save time, you may use either "armaan", "Harry" or "workouts" as usernames. They already have workouts logged.
+If you want to try for yourself, you can enter your own name. Same thing will happen but you'll have to create workouts.
+
+Program User Manual:
 
 User enters username. Their workout logs will correspond to their usernames.
 
