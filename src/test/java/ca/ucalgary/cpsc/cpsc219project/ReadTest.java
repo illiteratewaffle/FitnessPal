@@ -30,7 +30,7 @@ class ReadTest {
     }
     /**
      * This works to test the Read class's ability to handle an empty file correctly by ensuring it counts zero lines
-     * as expected. This is important for validating how the system behaves with minimal input.
+     * as expected.
      */
     @Test
     void test_Read_noLinesFile() {
