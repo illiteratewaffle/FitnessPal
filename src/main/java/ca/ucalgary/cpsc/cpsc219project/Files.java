@@ -5,7 +5,9 @@ import java.io.IOException;
 
 /**
  * Redundant class but want to show that we understand how inheritance and visibility modifiers work.
- */
+ * This class provides basic file handling operations.It works to demonstrate
+ * understanding of inheritance and visibility modifiers in a simple file management context.
+ **/
 public class Files {
 
     protected String path;
@@ -25,7 +27,9 @@ public class Files {
         File file = null;
 
         try {
+            //Attempts to create a new file
             file = new File(testPathName);
+            //creates a new file if a file already exists this is ignored
             if (file.createNewFile()) {
                 System.out.println(file.getName() + " was created" );
 
@@ -33,7 +37,7 @@ public class Files {
                 System.out.println("file already exists" );
 
             }
-
+            //Updates pathh variable with the current file path
             this.path = testPathName;
 
         } catch (IOException e) {
