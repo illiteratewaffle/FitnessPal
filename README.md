@@ -2,8 +2,10 @@
 **Developers : Harry Hu, Muhammad Hasham, Armaan Singh**
 
 Program Description
+
 FitnessPal is a workout tracker thats allows users to log and track their workouts efficiently. Each user is able
-to create and manage their own workout log. They can choose custom workouts and organize by any means they want in order
+to create and manage their own workout log. They can write any workouts including custom one custom workouts and organize by them in different 
+ways in terms of practicality/personal choice
 
 
 
