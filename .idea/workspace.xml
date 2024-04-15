@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="rename &quot;sort by exercise&quot; to &quot;sort alphabetically&quot; in GUI" />
+    <list default="true" id="b59c40b8-7169-43d3-b4d5-889578796b61" name="Changes" comment="add more &quot;testing outside of junit&quot; scenarios">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -278,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713126468820</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add more &quot;testing outside of junit&quot; scenarios">
+      <option name="closed" value="true" />
+      <created>1713127174975</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1713127174975</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +327,7 @@
     <MESSAGE value="Add feature to see specific exercises" />
     <MESSAGE value="add testing comments to readme" />
     <MESSAGE value="rename &quot;sort by exercise&quot; to &quot;sort alphabetically&quot; in GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename &quot;sort by exercise&quot; to &quot;sort alphabetically&quot; in GUI" />
+    <MESSAGE value="add more &quot;testing outside of junit&quot; scenarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="add more &quot;testing outside of junit&quot; scenarios" />
   </component>
 </project>
