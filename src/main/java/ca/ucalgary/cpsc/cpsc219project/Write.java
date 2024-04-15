@@ -14,6 +14,8 @@ public class Write extends Files {
      */
     public void writeFile(String log) {
         Files files = new Files();
+        // Retrieves the username for file naming. Assuming there is a class FitnessPalLoginController
+        // handles user session and login information.
         this.username = FitnessPalLoginController.getUsername();
 
         try {
